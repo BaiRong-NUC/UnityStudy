@@ -8,6 +8,14 @@ public class GUIBasicControls : MonoBehaviour
 
     public GUIStyle myStyle;
 
+    private bool toggleState = true;
+
+    private bool toggleState2 = false;
+
+    public GUIStyle toggleStyle;
+
+    private int nowSelected = 0;
+
     // 1. GUI控件绘制的共同点:
     //   - 他们都是GUI公共类中提供的静态函数直接调用即可
     // 2. 他们的参数都大同小异
@@ -44,6 +52,27 @@ public class GUIBasicControls : MonoBehaviour
         {
             Debug.Log("持续按压按钮");
         }
+
+        // 3. 多选框
+        this.toggleState = GUI.Toggle(new Rect(10, 250, 200, 50), this.toggleState, "效果开关"); // true表示选中状态
+
+        // 自定义样式,修改固定宽高 fixedWidth fixedHeight
+        // 修改从GUIStyle边缘到内容起始处的空间 padding 
+        this.toggleState2 = GUI.Toggle(new Rect(10, 310, 200, 50), this.toggleState2, "自定义样式单选框", this.toggleStyle);
+        // onNormal: 未选中状态样式
+        // Normal: 选中状态样式
+
+
+        // 4. 单选框
+        if (GUI.Toggle(new Rect(10, 370, 200, 50), nowSelected == 0, "选项一"))
+        {
+            nowSelected = 0;
+        }
+        if (GUI.Toggle(new Rect(10, 430, 200, 50), nowSelected == 1, "选项二"))
+        {
+            nowSelected = 1;
+        }
+        //  - 只能选中一个, 选中一个后另一个自动取消
     }
 
 }
