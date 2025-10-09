@@ -16,6 +16,12 @@ public class GUIBasicControls : MonoBehaviour
 
     private int nowSelected = 0;
 
+    private string input_string = "";
+
+    private string password_string = "";
+
+    private float sliderValue = 0.5f;
+
     // 1. GUI控件绘制的共同点:
     //   - 他们都是GUI公共类中提供的静态函数直接调用即可
     // 2. 他们的参数都大同小异
@@ -35,7 +41,7 @@ public class GUIBasicControls : MonoBehaviour
         GUI.Label(new Rect(220, 10, 100, 100), img); // 尽可能保证图片显示原始的宽高比
         GUI.Label(new Rect(220, 120, 100, 100), new GUIContent("图片标签", img, "鼠标悬停提示"));
         //  - tooltip: 鼠标悬停提示信息
-        Debug.Log(GUI.tooltip); // 实时打印鼠标悬停位置组件的提示信息
+        // Debug.Log(GUI.tooltip); // 实时打印鼠标悬停位置组件的提示信息
         //  - 自定义样式: GUIStyle参数
         GUI.Label(new Rect(220, 200, 200, 50), "自定义样式标签", myStyle);
 
@@ -73,6 +79,23 @@ public class GUIBasicControls : MonoBehaviour
             nowSelected = 1;
         }
         //  - 只能选中一个, 选中一个后另一个自动取消
+
+        // 5. 文本输入框
+        //   - 普通输入框
+        input_string = GUI.TextField(new Rect(10, 490, 200, 50), input_string);
+        //   - 密码输入框
+        password_string = GUI.PasswordField(new Rect(10, 550, 200, 50), password_string, '*');
+
+        // 6. 拖动条
+        // - 水平拖动条
+        // value: 当前值
+        // leftValue: 最小值
+        // rightValue: 最大值
+        sliderValue = GUI.HorizontalSlider(new Rect(10, 610, 200, 50), sliderValue, 0f, 1f);
+        Debug.Log("水平拖动条值: " + sliderValue);
+        // - 垂直拖动条
+        sliderValue = GUI.VerticalSlider(new Rect(220, 610, 50, 200), sliderValue, 1f, 0f);
+        Debug.Log("垂直拖动条值: " + sliderValue);
     }
 
 }
