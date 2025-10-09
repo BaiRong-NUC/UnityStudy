@@ -42,20 +42,20 @@ public class TestGUILayout : MonoBehaviour
         // 允许或禁止水平拓展
         // GUILayout.ExpandHeight(true); // 允许垂直拓展,不一样高的按钮长度会强制对齐,顶部对齐
         // GUILayout.ExpandWidth(false); // 不允许水平拓展,不一样宽的按钮长度不会强制对齐,左对齐
-        // ExpandWidth
-        GUILayout.BeginHorizontal();
-        GUILayout.Label("ExpandWidth(false):");
-        GUILayout.Button("短按钮", GUILayout.ExpandWidth(false));
-        GUILayout.Label("ExpandWidth(true):");
-        GUILayout.Button("长按钮文本会扩展填充空间", GUILayout.ExpandWidth(true));
-        GUILayout.EndHorizontal();
+        // // ExpandWidth
+        // GUILayout.BeginHorizontal();
+        // GUILayout.Label("ExpandWidth(false):");
+        // GUILayout.Button("短按钮", GUILayout.ExpandWidth(false));
+        // GUILayout.Label("ExpandWidth(true):");
+        // GUILayout.Button("长按钮文本会扩展填充空间", GUILayout.ExpandWidth(true));
+        // GUILayout.EndHorizontal();
 
-        // ExpandHeight
-        GUILayout.BeginVertical(GUILayout.Height(150)); // 设置容器高度为150
-        GUILayout.Label("ExpandHeight(false):");
-        GUILayout.Button("短按钮", GUILayout.ExpandHeight(false));
-        GUILayout.Label("ExpandHeight(true):");
-        GUILayout.Button("长按钮文本会扩展填充垂直空间", GUILayout.ExpandHeight(true));
-        GUILayout.EndVertical();
+        // // ExpandHeight
+        // GUILayout.BeginVertical(GUILayout.Height(150)); // 设置容器高度为150
+        // GUILayout.Label("ExpandHeight(false):");
+        // GUILayout.Button("短按钮", GUILayout.ExpandHeight(false));
+        // GUILayout.Label("ExpandHeight(true):");
+        // GUILayout.Button("长按钮文本会扩展填充垂直空间", GUILayout.ExpandHeight(true));
+        // GUILayout.EndVertical();
     }
 }
