@@ -53,6 +53,7 @@
      <Compile Include="Assets\Sctipts\15. PlayerPrefs数据持久化\TestPlayerPrefsManage.cs" />
      <Compile Include="Assets\Sctipts\17. GUI基础控件\GUIBasicControls.cs" />
      <Compile Include="Assets\Sctipts\18. GUI复合控件\GUICompositeControls.cs" />
+     <Compile Include="Assets\Sctipts\19. GUI自定义样式\Style.cs" />
      <Compile Include="Assets\Sctipts\2. Inspector窗口可编辑界面\Edit.cs" />
      <Compile Include="Assets\Sctipts\3. MonoBehavior\TestMonoBehavior.cs" />
      <Compile Include="Assets\Sctipts\4. GameObject\TestGameObject.cs" />
