@@ -8,6 +8,10 @@ public class GUICompositeControls : MonoBehaviour
     private int toolbarIndex = 0;
 
     private int selectionGridIndex = 0;
+
+    public Rect groupRect = new Rect(10, 250, 300, 200);
+
+    private Vector2 scrollPosition = Vector2.zero; // 当前滚动位置
     private void OnGUI()
     {
         // 1. 工具栏
@@ -59,5 +63,22 @@ public class GUICompositeControls : MonoBehaviour
                 GUI.Label(new Rect(10, 200, 200, 30), "选项6被选中", blackStyle);
                 break;
         }
+
+        // 3. 分组
+        // 用于批量控制空间位置,可以通过控制分组控制包裹控件的位置.可以理解为 为包裹其中的控件添加了父节点
+        GUI.BeginGroup(groupRect);
+        GUI.Box(new Rect(0, 0, 100, 50), "分组BOX");
+        GUI.Label(new Rect(10, 60, 200, 30), "分组内的标签", blackStyle);
+        GUI.EndGroup();
+
+        // 4. 滚动列表
+        // 语法：Vector2 BeginScrollView(Rect position, Vector2 scrollPosition, Rect viewRect); //开始绘制滚动列表
+        // 说明：position：位置和大小；scrollPosition：当前滚动位置；viewRect：内容区域大小(整体内容的大小,当大小大于滚动的大小就会出现滚动条)
+        // 返回值：返回当前滚动位置
+        // 因为200>180,所以横向不会有滚动条,150<300,所以纵向会有滚动条
+        scrollPosition = GUI.BeginScrollView(new Rect(350, 10, 200, 150), scrollPosition, new Rect(0, 0, 180, 300));
+        // 在滚动区域内绘制内容
+        this.selectionGridIndex = GUI.SelectionGrid(new Rect(0, 0, 180, 300), this.selectionGridIndex, new string[] { "选项1", "选项2", "选项3", "选项4", "选项5", "选项6" }, 1);
+        GUI.EndScrollView();
     }
 }
