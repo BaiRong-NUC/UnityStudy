@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GUIBasicControls : MonoBehaviour
 {
@@ -21,6 +22,15 @@ public class GUIBasicControls : MonoBehaviour
     private string password_string = "";
 
     private float sliderValue = 0.5f;
+
+    public Rect imgRect = new Rect(400, 10, 100, 100);
+    public Texture img2;
+
+    public ScaleMode scaleMode = ScaleMode.StretchToFill;
+
+    public bool alphaBlend = true;
+
+    public float imgAspect = 0f; // 0表示保持图片原始宽高比
 
     // 1. GUI控件绘制的共同点:
     //   - 他们都是GUI公共类中提供的静态函数直接调用即可
@@ -92,10 +102,23 @@ public class GUIBasicControls : MonoBehaviour
         // leftValue: 最小值
         // rightValue: 最大值
         sliderValue = GUI.HorizontalSlider(new Rect(10, 610, 200, 50), sliderValue, 0f, 1f);
-        Debug.Log("水平拖动条值: " + sliderValue);
+        // Debug.Log("水平拖动条值: " + sliderValue);
         // - 垂直拖动条
         sliderValue = GUI.VerticalSlider(new Rect(220, 610, 50, 200), sliderValue, 1f, 0f);
-        Debug.Log("垂直拖动条值: " + sliderValue);
+        // Debug.Log("垂直拖动条值: " + sliderValue);
+
+        // 7. 图片绘制
+        // GUI.DrawTexture(new Rect(400, 10, 100, 100), img2);
+        // alphaBlend: 是否开启透明混合
+        // imgAspect: 图片宽高比, 0表示保持图片原始宽高比,可以自定义图片宽高比缩放时的比例
+        // scaleMode: 图片缩放模式
+        //   - StretchToFill: 拉伸填充, 图片可能变形
+        //   - ScaleAndCrop: 按照宽高比缩放(wh), 直到某一边超出区域, 然后裁剪掉超出部分
+        //   - ScaleToFit: 按照宽高比缩放(wh), 直到某一边贴合区域, 另一边可能有空白(按照宽高最小值的比例缩放)
+        GUI.DrawTexture(imgRect, img2, scaleMode, alphaBlend, imgAspect);
+
+        // 8. 框绘制
+        GUI.Box(new Rect(400, 120, 200, 200), "框绘制");
     }
 
 }
