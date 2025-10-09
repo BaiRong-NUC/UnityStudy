@@ -36,9 +36,9 @@ public class TestGUILayout : MonoBehaviour
 
         // 2. GUILayoutOptions选项
         // 固定控件的宽高
-        GUILayout.Button("固定宽高按钮1", GUILayout.Width(200), GUILayout.Height(50));
+        GUILayout.Button("固定宽高按钮1", GUILayout.Width(200), GUILayout.Height(50)); //创建一个按钮，固定宽度为200像素，高度为50像素。按钮不会根据内容或容器自动调整大小
         // 允许控件最小宽高,最大宽高
-        GUILayout.Button("最小/最大宽高按钮2", GUILayout.MinWidth(5), GUILayout.MinHeight(50), GUILayout.MaxWidth(200), GUILayout.MaxHeight(100));
+        GUILayout.Button("最小/最大宽高按钮2", GUILayout.MinWidth(5), GUILayout.MinHeight(50), GUILayout.MaxWidth(200), GUILayout.MaxHeight(100)); //创建一个按钮，设置最小宽度5像素、最小高度50像素、最大宽度200像素、最大高度100像素。按钮会根据内容和容器在这些范围内自动调整大小。
         // 允许或禁止水平拓展
         // GUILayout.ExpandHeight(true); // 允许垂直拓展,不一样高的按钮长度会强制对齐,顶部对齐
         // GUILayout.ExpandWidth(false); // 不允许水平拓展,不一样宽的按钮长度不会强制对齐,左对齐
