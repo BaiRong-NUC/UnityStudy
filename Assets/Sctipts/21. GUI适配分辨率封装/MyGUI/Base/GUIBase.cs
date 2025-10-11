@@ -21,7 +21,8 @@ public class GUIBase : MonoBehaviour
     // 4. 自定义样式是否开始
     public GUIType useCustomStyle = GUIType.Off;
 
-    private void OnGUI()
+    // 给外部提供的绘制GUI方法
+    public void DrawGUI()
     {
         if (this.useCustomStyle == GUIType.On)
         {
@@ -36,12 +37,12 @@ public class GUIBase : MonoBehaviour
     // 使用自定义风格画控件
     protected virtual void DrawControlUseStyle()
     {
-        // GUI.Button(guiPos.pos, guiContent, guiStyle);
+        GUI.Button(guiPos.pos, guiContent, guiStyle);
     }
 
     // 使用默认风格画控件
     protected virtual void DrawControlNoStyle()
     {
-        // GUI.Button(guiPos.pos, guiContent);
+        GUI.Button(guiPos.pos, guiContent);
     }
 }
