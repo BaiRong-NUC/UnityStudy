@@ -56,6 +56,7 @@
      <Compile Include="Assets\Sctipts\19. GUI自定义样式\Style.cs" />
      <Compile Include="Assets\Sctipts\2. Inspector窗口可编辑界面\Edit.cs" />
      <Compile Include="Assets\Sctipts\20. GUILayout自动布局\TestGUILayout.cs" />
+     <Compile Include="Assets\Sctipts\21. GUI适配分辨率封装\MyGUI\Base\GUIBase.cs" />
      <Compile Include="Assets\Sctipts\21. GUI适配分辨率封装\MyGUI\Base\GUIPosition.cs" />
      <Compile Include="Assets\Sctipts\3. MonoBehavior\TestMonoBehavior.cs" />
      <Compile Include="Assets\Sctipts\4. GameObject\TestGameObject.cs" />

@@ -17,6 +17,7 @@ public enum GUIAnchor
 }
 
 // 表示GUI位置的类,用于计算位置相关信息
+[System.Serializable]
 public class GUIPosition
 {
     // 绘制控件的位置信息
@@ -145,7 +146,7 @@ public class GUIPosition
 
             // 计算控件的中心位置
             this.controlCenterPos = this._CalControlCenterPos();
-            Vector2 controlCenterPos = this._CalControlCenterPos();
+            Vector2 controlCenterPos = this._CalControlPos();
             this._pos.x = controlCenterPos.x;
             this._pos.y = controlCenterPos.y;
             return _pos;
