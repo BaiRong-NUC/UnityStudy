@@ -145,6 +145,9 @@ public class GUIPosition
 
             // 计算控件的中心位置
             this.controlCenterPos = this._CalControlCenterPos();
+            Vector2 controlCenterPos = this._CalControlCenterPos();
+            this._pos.x = controlCenterPos.x;
+            this._pos.y = controlCenterPos.y;
             return _pos;
         }
     }
