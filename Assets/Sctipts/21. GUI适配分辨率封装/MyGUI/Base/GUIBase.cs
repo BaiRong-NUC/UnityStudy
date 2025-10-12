@@ -10,7 +10,7 @@ public enum GUIType
 
 
 // 控件共同行为父类
-public class GUIBase : MonoBehaviour
+public abstract class GUIBase : MonoBehaviour
 {
     // 1. 位置信息
     public GUIPosition guiPos = new GUIPosition();
@@ -35,14 +35,8 @@ public class GUIBase : MonoBehaviour
     }
 
     // 使用自定义风格画控件
-    protected virtual void DrawControlUseStyle()
-    {
-        GUI.Button(guiPos.pos, guiContent, guiStyle);
-    }
+    protected abstract void DrawControlUseStyle();
 
     // 使用默认风格画控件
-    protected virtual void DrawControlNoStyle()
-    {
-        GUI.Button(guiPos.pos, guiContent);
-    }
+    protected abstract void DrawControlNoStyle();
 }

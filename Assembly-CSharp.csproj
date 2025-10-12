@@ -59,6 +59,8 @@
      <Compile Include="Assets\Sctipts\21. GUI适配分辨率封装\MyGUI\Base\GUIBase.cs" />
      <Compile Include="Assets\Sctipts\21. GUI适配分辨率封装\MyGUI\Base\GUIPosition.cs" />
      <Compile Include="Assets\Sctipts\21. GUI适配分辨率封装\MyGUI\Base\GUIRoot.cs" />
+     <Compile Include="Assets\Sctipts\21. GUI适配分辨率封装\MyGUI\GUIButton.cs" />
+     <Compile Include="Assets\Sctipts\21. GUI适配分辨率封装\MyGUI\GUILabel.cs" />
      <Compile Include="Assets\Sctipts\3. MonoBehavior\TestMonoBehavior.cs" />
      <Compile Include="Assets\Sctipts\4. GameObject\TestGameObject.cs" />
      <Compile Include="Assets\Sctipts\5. Time\TestTime.cs" />
