@@ -10,7 +10,7 @@ public class GUIRoot : MonoBehaviour
     private GUIBase[] allControls;
     void Start()
     {
-
+        this.allControls = this.GetComponentsInChildren<GUIBase>();
     }
 
     // 绘制子对象控件内容,控制子对象OnGUI执行顺序
@@ -22,10 +22,13 @@ public class GUIRoot : MonoBehaviour
             // 在编辑状态下才会一直运行
             this.allControls = this.GetComponentsInChildren<GUIBase>();
         }
-        // 遍历所有控件,调用绘制方法,控制绘制顺序
-        foreach (var control in allControls)
+        if (this.allControls != null)
         {
-            control.DrawGUI();
+            // 遍历所有控件,调用绘制方法,控制绘制顺序
+            foreach (var control in allControls)
+            {
+                control.DrawGUI();
+            }
         }
     }
 }
