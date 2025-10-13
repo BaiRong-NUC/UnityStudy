@@ -66,6 +66,7 @@
      <Compile Include="Assets\Sctipts\21. GUI适配分辨率封装\MyGUI\GUISlider.cs" />
      <Compile Include="Assets\Sctipts\21. GUI适配分辨率封装\MyGUI\GUITexture.cs" />
      <Compile Include="Assets\Sctipts\21. GUI适配分辨率封装\MyGUI\GUIToggle.cs" />
+     <Compile Include="Assets\Sctipts\23. Unity鼠标样式\MouseStyle.cs" />
      <Compile Include="Assets\Sctipts\3. MonoBehavior\TestMonoBehavior.cs" />
      <Compile Include="Assets\Sctipts\4. GameObject\TestGameObject.cs" />
      <Compile Include="Assets\Sctipts\5. Time\TestTime.cs" />
