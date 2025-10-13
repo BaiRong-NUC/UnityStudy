@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/UnityLearnScene.unity
     guid: de4867dd00893804aa4fe8b4a3dff406
+  - enabled: 1
+    path: Assets/Scenes/TankGameScene.unity
+    guid: 06c97d518386299459aa6c9ed996e2e0
   m_configObjects: {}
