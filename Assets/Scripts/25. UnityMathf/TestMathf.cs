@@ -63,13 +63,13 @@ public class TestMathf : MonoBehaviour
     void Update()
     {
         // 14. 插值运算
-        // Lerp线性插值 参数1:起始值 参数2:结束值 参数3:插值比例(0~1)
-        // 每帧改变startValue的值,速度先快后慢,位置逐渐接近100,但不等于100
-        startValue = Mathf.Lerp(startValue, 100, Time.deltaTime); // startValue=startValue+(100-startValue)*Time.deltaTime
-        print("startValue: " + startValue);
+        // // Lerp线性插值 参数1:起始值 参数2:结束值 参数3:插值比例(0~1)
+        // // 每帧改变startValue的值,速度先快后慢,位置逐渐接近100,但不等于100
+        // startValue = Mathf.Lerp(startValue, 100, Time.deltaTime); // startValue=startValue+(100-startValue)*Time.deltaTime
+        // print("startValue: " + startValue);
 
         //每帧改变t的值,变化速度匀速,位置每帧接近,当time>=1时,位置等于100
         time += Time.deltaTime;
-        result = Mathf.Lerp(result, 100, time);
+        result = Mathf.Lerp(startValue, 100, time);
     }
 }
