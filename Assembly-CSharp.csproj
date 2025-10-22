@@ -68,6 +68,7 @@
      <Compile Include="Assets\Scripts\21. GUI适配分辨率封装\MyGUI\GUIToggle.cs" />
      <Compile Include="Assets\Scripts\23. Unity鼠标样式\MouseStyle.cs" />
      <Compile Include="Assets\Scripts\24. Unity随机数与Unity委托\RandomNumber.cs" />
+     <Compile Include="Assets\Scripts\25. UnityMathf\TestMathf.cs" />
      <Compile Include="Assets\Scripts\3. MonoBehavior\TestMonoBehavior.cs" />
      <Compile Include="Assets\Scripts\4. GameObject\TestGameObject.cs" />
      <Compile Include="Assets\Scripts\5. Time\TestTime.cs" />
