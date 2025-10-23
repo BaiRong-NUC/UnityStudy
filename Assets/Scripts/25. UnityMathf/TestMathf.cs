@@ -54,6 +54,22 @@ public class TestMathf : MonoBehaviour
         print(Mathf.Sign(-5)); // -1
         print(Mathf.Sign(5));  // 1
         print(Mathf.Sign(0));  // 0
+
+        // 14. 弧度转角度
+        print(Mathf.Rad2Deg * 1); // 57.29578 1弧度 = 57.29578度
+
+        // 15. 角度转弧度
+        print(Mathf.Deg2Rad * 180); // 3.141593 180度 = π弧度
+
+        // 16. 三角函数
+        print(Mathf.Sin(Mathf.Deg2Rad * 30)); // 0.5 30度的正弦值
+        print(Mathf.Cos(Mathf.Deg2Rad * 60)); // 0.5 60度的余弦值
+        print(Mathf.Tan(Mathf.Deg2Rad * 45)); // 1 45度的正切值
+
+        // 17. 反三角函数
+        print(Mathf.Asin(0.5f) * Mathf.Rad2Deg); //1 30 反正弦值为30度
+        print(Mathf.Acos(0.5f) * Mathf.Rad2Deg); //1 60 反余弦值为60度
+        print(Mathf.Atan(1) * Mathf.Rad2Deg);   //1 45 反正切值为45度
     }
 
     float startValue = 0;
