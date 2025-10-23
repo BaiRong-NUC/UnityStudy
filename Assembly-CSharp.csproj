@@ -70,6 +70,7 @@
      <Compile Include="Assets\Scripts\24. Unity随机数与Unity委托\RandomNumber.cs" />
      <Compile Include="Assets\Scripts\25. UnityMathf\MoveSin.cs" />
      <Compile Include="Assets\Scripts\25. UnityMathf\TestMathf.cs" />
+     <Compile Include="Assets\Scripts\26. Unity坐标系\UnityCoordinates.cs" />
      <Compile Include="Assets\Scripts\3. MonoBehavior\TestMonoBehavior.cs" />
      <Compile Include="Assets\Scripts\4. GameObject\TestGameObject.cs" />
      <Compile Include="Assets\Scripts\5. Time\TestTime.cs" />
