@@ -45,5 +45,11 @@ public class UnityVector : MonoBehaviour
         Vector3 smaller = pointB / 2;
         print(bigger);
         print(smaller);
+        // 8. 向量的点乘(数量积)
+        //    - 计算两个向量的夹角,判断两个物体的夹角
+        float dot = Vector3.Dot(pointA, pointB);
+        print("点乘结果:" + dot);
+        float angle = Mathf.Acos(dot / (pointA.magnitude * pointB.magnitude)) * Mathf.Rad2Deg;
+        print("夹角:" + angle);
     }
 }
