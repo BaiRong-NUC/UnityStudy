@@ -30,5 +30,20 @@ public class UnityVector : MonoBehaviour
         print(normB);
         print("normA的长度:" + normA.magnitude);
         print("normB的长度:" + normB.magnitude);
+        // 6. 相量加法/减法
+        //    - 向量加/减向量=新方向的向量(平行四边形法则)
+        //    - 坐标加/减向量=新坐标
+        //    - 坐标-坐标=方向向量
+        Vector3 newPosition = this.transform.position + Vector3.up;
+        print(newPosition);
+        Vector3 newDirection = Vector3.right + Vector3.forward;
+        print(newDirection);
+        // 7. 向量数乘/数除 (一般用于缩放大小)
+        //   - 向量*数=放大后的向量
+        //   - 向量/数=缩小后的向量
+        Vector3 bigger = pointA * 3;
+        Vector3 smaller = pointB / 2;
+        print(bigger);
+        print(smaller);
     }
 }
