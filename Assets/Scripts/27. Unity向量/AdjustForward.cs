@@ -41,5 +41,16 @@ public class AdjustForward : MonoBehaviour
             // 在Scene视图中画一个黄色射线,表示目标接近
             Debug.DrawRay(this.transform.position, target.position - this.transform.position, Color.yellow);
         }
+
+        // 判断方向
+        print(Vector3.Cross(this.transform.position, this.target.position));
+        if (Vector3.Cross(this.transform.position, this.target.position).y > 0)
+        {
+            print("目标在右侧");
+        }
+        else
+        {
+            print("目标在左侧");
+        }
     }
 }

@@ -51,5 +51,12 @@ public class UnityVector : MonoBehaviour
         print("点乘结果:" + dot);
         float angle = Mathf.Acos(dot / (pointA.magnitude * pointB.magnitude)) * Mathf.Rad2Deg;
         print("夹角:" + angle);
+        // 9. 向量的叉乘(向量积)
+        //    - 计算两个向量的垂直向量,判断两个物体的相对方向
+        Vector3 cross = Vector3.Cross(pointA, pointB);
+        print("叉乘结果:" + cross);
+        print(Vector3.Cross(Vector3.right, Vector3.up)); // 上
+        // 几何意义: cross垂直于pointA和pointB组成的平面
+        // 右手定则: 右手四指从pointA旋转到pointB,大拇指指向cross方向（注意：Unity当中使用左手，因为Unity使用的是左手坐标系）
     }
 }
