@@ -73,6 +73,7 @@
      <Compile Include="Assets\Scripts\26. Unity坐标系\UnityCoordinates.cs" />
      <Compile Include="Assets\Scripts\27. Unity向量\AdjustForward.cs" />
      <Compile Include="Assets\Scripts\27. Unity向量\UnityVector.cs" />
+     <Compile Include="Assets\Scripts\27. Unity向量\Vector3Lerp.cs" />
      <Compile Include="Assets\Scripts\3. MonoBehavior\TestMonoBehavior.cs" />
      <Compile Include="Assets\Scripts\4. GameObject\TestGameObject.cs" />
      <Compile Include="Assets\Scripts\5. Time\TestTime.cs" />
