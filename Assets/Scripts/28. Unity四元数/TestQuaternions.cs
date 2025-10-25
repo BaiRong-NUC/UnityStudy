@@ -30,7 +30,5 @@ public class TestQuaternions : MonoBehaviour
         // 当角度为0或360度时,对于给定轴都会得到单位四元数
         // [1,(0,0,0)]=[-1,(0,0,0)]表示没有旋转量
         print("单位四元数:" + Quaternion.identity); // 单位四元数
-
-        // 5. 向量指向转化为四元数
     }
 }

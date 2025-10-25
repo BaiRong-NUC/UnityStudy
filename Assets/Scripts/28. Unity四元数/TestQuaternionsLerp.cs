@@ -15,6 +15,12 @@ public class TestQuaternionsLerp : MonoBehaviour
 
     private Quaternion startTarget;
 
+    // 看向的位置A
+    public Transform lookA;
+
+    // 看向的位置B
+    public Transform lookB;
+
     void Start()
     {
         start = A.transform.rotation;
@@ -37,5 +43,10 @@ public class TestQuaternionsLerp : MonoBehaviour
         }
         this.time += Time.deltaTime * 0.5f;
         B.transform.rotation = Quaternion.Slerp(start, target.transform.rotation, time);
+
+
+        // 5. 向量指向转化为四元数,让物体看向某个位置
+        // AB向量转化为四元数
+        lookA.rotation=Quaternion.LookRotation(lookA.position - lookB.position); // 让lookA看向lookB
     }
 }
