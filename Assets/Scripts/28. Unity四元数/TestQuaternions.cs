@@ -25,5 +25,12 @@ public class TestQuaternions : MonoBehaviour
         //  - 四元数->欧拉角
         Vector3 eulerFromQuaternion = quaternionFromEuler.eulerAngles;
         print("欧拉角:" + eulerFromQuaternion);
+
+        // 3. 单位四元数,单位四元数没有旋转量(角位移为0),用于初始化
+        // 当角度为0或360度时,对于给定轴都会得到单位四元数
+        // [1,(0,0,0)]=[-1,(0,0,0)]表示没有旋转量
+        print("单位四元数:" + Quaternion.identity); // 单位四元数
+
+        // 5. 向量指向转化为四元数
     }
 }

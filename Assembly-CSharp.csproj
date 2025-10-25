@@ -75,6 +75,7 @@
      <Compile Include="Assets\Scripts\27. Unity向量\UnityVector.cs" />
      <Compile Include="Assets\Scripts\27. Unity向量\Vector3Lerp.cs" />
      <Compile Include="Assets\Scripts\28. Unity四元数\TestQuaternions.cs" />
+     <Compile Include="Assets\Scripts\28. Unity四元数\TestQuaternionsLerp.cs" />
      <Compile Include="Assets\Scripts\3. MonoBehavior\TestMonoBehavior.cs" />
      <Compile Include="Assets\Scripts\4. GameObject\TestGameObject.cs" />
      <Compile Include="Assets\Scripts\5. Time\TestTime.cs" />
