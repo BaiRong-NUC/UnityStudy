@@ -30,5 +30,19 @@ public class TestQuaternions : MonoBehaviour
         // 当角度为0或360度时,对于给定轴都会得到单位四元数
         // [1,(0,0,0)]=[-1,(0,0,0)]表示没有旋转量
         print("单位四元数:" + Quaternion.identity); // 单位四元数
+
+        // 6. 四元数相乘
+        // 两个四元数相乘得到一个新的四元数,代表两个旋转量的叠加,相当于旋转,旋转的相对坐标系是自己的坐标系
+        Quaternion q1 = Quaternion.AngleAxis(60, Vector3.up);
+        GameObject cube3 = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        cube3.transform.position = new Vector3(-2, 0, 0);
+        cube3.transform.rotation = cube3.transform.rotation * q1; // 让cube3绕自己的y轴旋转60度
+
+        // 7. 四元数乘向量,返回一个新的向量,相当于旋转向量,可以让对应向量旋转四元数表示的角度
+        Vector3 forward = Vector3.forward; // (0,0,1)
+        Quaternion rotation = Quaternion.AngleAxis(45, Vector3.up); // 绕y轴旋转45度
+        print("旋转前的向量:" + forward + ",绕y周旋转45度后的向量:" + (rotation * forward)
+        +"绕y轴旋转90度后的向量:" + (Quaternion.AngleAxis(90, Vector3.up) * forward)); // 输出旋转后的向量(必须是四元数×向量))
+
     }
 }
