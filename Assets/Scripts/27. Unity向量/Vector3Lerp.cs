@@ -45,7 +45,11 @@ public class Vector3Lerp : MonoBehaviour
         // 匀速
         // this.pointC.position = Vector3.Slerp(Vector3.right * 10, Vector3.forward * 10, time / 2); // time/2控制插值速度
         // 先快后慢
-        this.pointC.position = Vector3.Slerp(this.pointC.position, Vector3.forward * 10, Time.deltaTime);
+        // this.pointC.position = Vector3.Slerp(this.pointC.position, Vector3.forward * 10, Time.deltaTime);
+
+        // 在空中做圆周运动
+        // 这个Vector3.up*0.1f是告诉Slerp不要在水平面上运动
+        this.pointC.position = Vector3.Slerp(Vector3.right * 10, Vector3.left * 10 + Vector3.up*0.1f, time / 2); // time/2控制插值速度
     }
 
 }
