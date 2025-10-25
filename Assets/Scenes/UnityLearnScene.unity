@@ -2216,6 +2216,7 @@ MonoBehaviour:
   currentBulletType: 0
   bulletPrefab: {fileID: 3694833181684425210, guid: 8ad338e442bb2d843829690aff44e07c,
     type: 3}
+  bulletNumber: 4
 --- !u!1 &851423669
 GameObject:
   m_ObjectHideFlags: 0
