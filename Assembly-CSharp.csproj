@@ -78,6 +78,7 @@
      <Compile Include="Assets\Scripts\28. Unity四元数\TestQuaternionsLerp.cs" />
      <Compile Include="Assets\Scripts\29. Unity四元数应用\AirPlane\AirPlane.cs" />
      <Compile Include="Assets\Scripts\29. Unity四元数应用\AirPlane\Bullet.cs" />
+     <Compile Include="Assets\Scripts\29. Unity四元数应用\CammerMove\CammerMove.cs" />
      <Compile Include="Assets\Scripts\3. MonoBehavior\TestMonoBehavior.cs" />
      <Compile Include="Assets\Scripts\4. GameObject\TestGameObject.cs" />
      <Compile Include="Assets\Scripts\5. Time\TestTime.cs" />
