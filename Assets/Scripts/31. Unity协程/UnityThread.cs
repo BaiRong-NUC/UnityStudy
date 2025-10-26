@@ -37,6 +37,9 @@ public class UnityThread : MonoBehaviour
         //    - new WaitForFixedUpdate(): 等待下一次物理更新后执行
         // 5. 跳出协程
         //    - yield break; 直接跳出协程
+        // 6. 协程受对象生命周期影响
+        //    - 当协程所在的对象被销毁时,协程会自动停止
+        //    - 物体失活协程不执行,组件(脚本)失活协程执行
     }
 
     IEnumerator TestCoroutine(int i, string str)
