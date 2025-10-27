@@ -82,6 +82,8 @@
      <Compile Include="Assets\Scripts\3. MonoBehavior\TestMonoBehavior.cs" />
      <Compile Include="Assets\Scripts\30. Unity延时函数\UnityInvoke.cs" />
      <Compile Include="Assets\Scripts\31. Unity协程\LearnThread.cs" />
+     <Compile Include="Assets\Scripts\31. Unity协程\MyStartCoroutine\CoroutineManage.cs" />
+     <Compile Include="Assets\Scripts\31. Unity协程\MyStartCoroutine\MyStartCoroutine.cs" />
      <Compile Include="Assets\Scripts\31. Unity协程\UnityThread.cs" />
      <Compile Include="Assets\Scripts\4. GameObject\TestGameObject.cs" />
      <Compile Include="Assets\Scripts\5. Time\TestTime.cs" />
