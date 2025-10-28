@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/UnityLearnScene.unity
     guid: de4867dd00893804aa4fe8b4a3dff406
   - enabled: 1
-    path: Assets/Scenes/TankGameScene.unity
-    guid: 06c97d518386299459aa6c9ed996e2e0
+    path: "Assets/Scripts/33. Unity\u573A\u666F\u5F02\u6B65\u52A0\u8F7D/TestScene.unity"
+    guid: f02784daed0c23f4eb21c655806cdb7e
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
