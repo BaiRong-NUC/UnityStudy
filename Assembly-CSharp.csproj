@@ -85,6 +85,7 @@
      <Compile Include="Assets\Scripts\31. Unity协程\MyStartCoroutine\CoroutineManage.cs" />
      <Compile Include="Assets\Scripts\31. Unity协程\MyStartCoroutine\MyStartCoroutine.cs" />
      <Compile Include="Assets\Scripts\31. Unity协程\UnityThread.cs" />
+     <Compile Include="Assets\Scripts\32. Unity特殊文件夹\UnityFolder.cs" />
      <Compile Include="Assets\Scripts\4. GameObject\TestGameObject.cs" />
      <Compile Include="Assets\Scripts\5. Time\TestTime.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Angle.cs" />
