@@ -78,6 +78,16 @@ public class ResourcesAPI : MonoBehaviour
 
         // 事件监听异步加载:只能在资源加载结束后进行处理
         // 协程异步加载:可以在等待过程中做其他操作,如进度条显示
+
+        // ==========资源卸载==========
+        // Resources加载一次的资源过后,该资源会在内存中作为缓存,第二次重复加载时,会直接使用内存中的缓存资源,提高效率
+        // 若某个资源长时间不使用,需要卸载所有未使用的资源,释放内存
+        // 1. 卸载指定资源
+        Resources.UnloadAsset(bgMusic); // 卸载指定资源,不能用于释放GameObject预设体资源
+
+        // 2. 卸载所有未使用的资源
+        Resources.UnloadUnusedAssets(); // 卸载所有未使用的资源,一般在过场景中,和垃圾回收一起使用,可能会导致卡顿
+        System.GC.Collect(); // 强制进行垃圾回收,释放内存
     }
     
     IEnumerator LoadAudioCoroutine()
