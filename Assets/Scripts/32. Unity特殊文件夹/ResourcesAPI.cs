@@ -55,12 +55,46 @@ public class ResourcesAPI : MonoBehaviour
             {
                 Debug.Log("加载到的音频资源:" + obj.name);
             }
-            else{
+            else
+            {
                 Debug.Log("加载到的其他资源:" + obj.name);
             }
         }
-    }
 
+        // ==========资源异步加载==========
+        // 若资源过大,使用上面的同步加载方式会导致卡顿(加载到内存),可以使用异步加载方式
+        // 异步加载需要等待资源加载完毕才可以使用
+
+        // 1. 使用异步加载完成事件监听使用加载资源
+        Resources.LoadAsync<AudioClip>("Musics/BKMusic").completed += (AsyncOperation op) =>
+        {
+            // assert是资源对象,加载完成后,就可以正常使用
+            AudioClip asyncBgMusic = (op as ResourceRequest).asset as AudioClip;
+            Debug.Log("异步加载到的音频资源:" + asyncBgMusic.name);
+        };
+
+        // 2. 使用协程加载资源
+        StartCoroutine(LoadAudioCoroutine());
+
+        // 事件监听异步加载:只能在资源加载结束后进行处理
+        // 协程异步加载:可以在等待过程中做其他操作,如进度条显示
+    }
+    
+    IEnumerator LoadAudioCoroutine()
+    {
+        ResourceRequest request = Resources.LoadAsync<AudioClip>("Musics/BKMusic");
+        // 等待加载完成
+        yield return request; // Unity会自动检测request的完成状态,未完成则等待
+        AudioClip asyncBgMusic = request.asset as AudioClip;
+        Debug.Log("协程异步加载到的音频资源:" + asyncBgMusic.name);
+
+        // // 方法二: 判断资源是否加载完毕
+        // while(!request.isDone)
+        // {
+        //     Debug.Log("协程加载进度:" + request.progress);
+        //     yield return null; // 等待下一帧
+        // }
+    }
 
     private void OnGUI()
     {
