@@ -90,6 +90,7 @@
      <Compile Include="Assets\Scripts\33. Unity场景异步加载\LoadScenes.cs" />
      <Compile Include="Assets\Scripts\34. LineRenderer\UnityLineRender.cs" />
      <Compile Include="Assets\Scripts\35. Unity范围检测\RangeRigbody.cs" />
+     <Compile Include="Assets\Scripts\36. Unity射线检测\UnityRay.cs" />
      <Compile Include="Assets\Scripts\4. GameObject\TestGameObject.cs" />
      <Compile Include="Assets\Scripts\5. Time\TestTime.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Angle.cs" />
