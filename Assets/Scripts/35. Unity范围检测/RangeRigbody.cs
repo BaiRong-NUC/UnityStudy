@@ -14,7 +14,7 @@ public class RangeRigbody : MonoBehaviour
 
         // 1. 盒状碰撞器
         // 参数一: 立方体中心点
-        // 参数二: 立方体三边大小
+        // 参数二: 立方体三边大小(长宽高的一半)
         // 参数三: 立方体角度
         // 参数四: 检测指定层级(默认检测所有层)
         // 参数五: 是否忽略触发器,默认使用QueryTriggerInteraction.UseGlobal
