@@ -12,4 +12,10 @@
             <number>5</number>
         </Item>
     </ItemsList>
+    <Friends>
+        <!-- 一个标签表达多个信息 -->
+        <Friend name="小明" age='18'>Friend1</Friend>
+        <!-- 使用属性记录信息,不适用元素记录 -->
+        <Friend name="小红" age='20' />
+    </Friends>
 </PlayerInfo>

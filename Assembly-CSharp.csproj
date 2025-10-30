@@ -101,6 +101,7 @@
      <Compile Include="Assets\Scripts\8. 坐标转化\TransPos.cs" />
      <Compile Include="Assets\Scripts\9. Input\TestInput.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+     <None Include="Assets\Scripts\37. XML数据持久化\LearnAPI\Test.xml" />
      <None Include="Assets\Resources\Texts\Test.txt" />
     <Reference Include="UnityEngine">
         <HintPath>D:\Unity\Unity Editor\2019.4.17f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
