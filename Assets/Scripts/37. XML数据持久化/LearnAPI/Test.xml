@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PlayerInfo>
+    <name>Player1</name>
+    <atk>100</atk>
+    <ItemsList>
+        <Item>
+            <id>1</id>
+            <number>10</number>
+        </Item>
+        <Item>
+            <id>2</id>
+            <number>5</number>
+        </Item>
+    </ItemsList>
+</PlayerInfo>
