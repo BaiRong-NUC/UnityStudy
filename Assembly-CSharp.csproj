@@ -91,6 +91,7 @@
      <Compile Include="Assets\Scripts\34. LineRenderer\UnityLineRender.cs" />
      <Compile Include="Assets\Scripts\35. Unity范围检测\RangeRigbody.cs" />
      <Compile Include="Assets\Scripts\36. Unity射线检测\UnityRay.cs" />
+     <Compile Include="Assets\Scripts\37. XML数据持久化\LearnAPI\LoadXML.cs" />
      <Compile Include="Assets\Scripts\4. GameObject\TestGameObject.cs" />
      <Compile Include="Assets\Scripts\5. Time\TestTime.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Angle.cs" />
@@ -103,6 +104,8 @@
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <None Include="Assets\Scripts\37. XML数据持久化\LearnAPI\Test.xml" />
      <None Include="Assets\Resources\Texts\Test.txt" />
+     <None Include="Assets\Resources\XML\Test.xml" />
+     <None Include="Assets\StreamingAssets\Test.xml" />
     <Reference Include="UnityEngine">
         <HintPath>D:\Unity\Unity Editor\2019.4.17f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
