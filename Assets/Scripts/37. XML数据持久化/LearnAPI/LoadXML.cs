@@ -48,5 +48,19 @@ public class LoadXML : MonoBehaviour
             Debug.Log("FriendAge: " + friendNode.Attributes["age"].Value);
             Debug.Log("FriendMsg: " + friendNode.InnerText);
         }
+
+        // 3. 存储xml文件
+        // 存储xml文件 在Unity中会使用各平台都可读可写可找到的路径
+        //    - Resources: 可读,不可写 打包后找不到
+        //    - Application.persistentDataPath: 可读可写,应用程序数据路径,一般用于存储XML文件
+        //    - Application.streamingAssetsPath: 可读有些平台不可写
+        //    - Application.dataPath: 打包后找不到
+
+        string savePath = Application.persistentDataPath + "/SaveTest.xml";
+        print("Save Path: " + savePath);
+        
+        // XmlDocument:用于创建节点 存储文件
+        // XmlDeclaration:用于声明xml版本信息
+        // XmlElement:用于创建元素节点类
     }
 }
