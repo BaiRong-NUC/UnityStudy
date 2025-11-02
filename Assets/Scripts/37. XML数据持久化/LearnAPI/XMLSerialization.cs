@@ -6,7 +6,9 @@ using UnityEngine;
 
 public class Item
 {
+    [XmlAttribute()]
     public int id;
+    [XmlAttribute("num")]
     public int number;
 }
 
@@ -17,11 +19,14 @@ public class TestMsg
     protected float time = 0;
     internal float score = 100.0f;
 
+    [XmlElement("UserName")]
     public string name { get { return "default"; } set { } }
 
     public Item specialItem = new Item() { id = 1, number = 99 };
 
+    [XmlArrayItem("ItemId")]
     public int[] intArray = new int[] { 1, 2, 3, 4, 5 };
+    [XmlArray("Int32List")]
     public List<int> intList = new List<int>() { 10, 20, 30, 40, 50 };
     public List<Item> items = new List<Item>(){
         new Item(){ id = 101, number = 1 },
@@ -61,10 +66,16 @@ public class XMLSerialization : MonoBehaviour
             XmlSerializer xmlSerializer = new XmlSerializer(typeof(TestMsg));
 
             xmlSerializer.Serialize(stream, testMsg);
-            
+
             // 序列化只能存公共的属性与成员变量,私有,保护,内部属性无法被序列化
             // XmlSerializer 需要属性,成员变量有无参构造函数
             // Dictionary 无法被序列化
         }
+
+        // 2. 自定义节点名或设置属性
+        // [XmlAttribute("name")] 设置属性节点,名称为name
+        // [XmlElement("name")] 设置元素节点,名称为name
+        // [XmlArray("nameList")] 设置数组或列表的节点名称为nameList
+        // [XmlArrayItem("name")] 设置数组或列表的子节点名称为name
     }
 }
