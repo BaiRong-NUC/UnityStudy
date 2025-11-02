@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Xml;
 using UnityEngine;
 
@@ -58,9 +59,77 @@ public class LoadXML : MonoBehaviour
 
         string savePath = Application.persistentDataPath + "/SaveTest.xml";
         print("Save Path: " + savePath);
-        
+
         // XmlDocument:用于创建节点 存储文件
         // XmlDeclaration:用于声明xml版本信息
         // XmlElement:用于创建元素节点类
+
+        // 创建XmlDocument对象
+        XmlDocument saveXmlDoc = new XmlDocument();
+        // 声明xml版本信息
+        XmlDeclaration xmlDeclaration = saveXmlDoc.CreateXmlDeclaration("1.0", "UTF-8", null);
+        saveXmlDoc.AppendChild(xmlDeclaration);
+        // 添加根节点
+        XmlElement rootElement = saveXmlDoc.CreateElement("GameData");
+        saveXmlDoc.AppendChild(rootElement);
+        // 添加子节点
+        XmlElement playerElement = saveXmlDoc.CreateElement("Player");
+        playerElement.InnerText = "player01";
+        rootElement.AppendChild(playerElement);
+        // 添加属性
+        XmlElement scoreElement = saveXmlDoc.CreateElement("Score");
+        scoreElement.SetAttribute("value", "1000");
+        rootElement.AppendChild(scoreElement);
+        // 添加列表
+        XmlElement inventoryElement = saveXmlDoc.CreateElement("Inventory");
+        for (int i = 0; i < 3; i++)
+        {
+            XmlElement itemElement = saveXmlDoc.CreateElement("Item");
+            itemElement.SetAttribute("id", (i + 1).ToString());
+            itemElement.SetAttribute("quantity", ((i + 1) * 10).ToString());
+            itemElement.InnerText = "Item " + (i + 1); 
+            inventoryElement.AppendChild(itemElement);
+        }
+        rootElement.AppendChild(inventoryElement);
+        // 保存
+        saveXmlDoc.Save(savePath);
+
+        // 4. 修改xml文件
+        if(File.Exists(savePath))
+        {
+            print("XML file exists, modifying...");
+            
+            XmlDocument modifyXmlDoc = new XmlDocument();
+            modifyXmlDoc.Load(savePath);
+            // 修改节点内容
+            XmlNode playerNode = modifyXmlDoc.SelectSingleNode("/GameData/Player");
+            if (playerNode != null)
+            {
+                playerNode.InnerText = "player02"; // 修改玩家名称
+            }
+            // 修改属性值
+            XmlNode scoreNode = modifyXmlDoc.SelectSingleNode("/GameData/Score");
+            if (scoreNode != null)
+            {
+                scoreNode.Attributes["value"].Value = "2000"; // 修改分数
+            }
+            // 移除子节点
+            XmlNode inventoryNode = modifyXmlDoc.SelectSingleNode("/GameData/Inventory");
+            if (inventoryNode != null && inventoryNode.HasChildNodes)
+            {
+                // inventoryNode.RemoveAll(); // 移除所有子节点
+                XmlNode firstItemNode = inventoryNode.SelectSingleNode("Item");
+                if (firstItemNode != null)
+                {
+                    inventoryNode.RemoveChild(firstItemNode); // 移除第一个物品节点
+                }
+            }
+            // 添加节点
+            XmlElement newSpeedElement = modifyXmlDoc.CreateElement("Speed");
+            newSpeedElement.SetAttribute("value", "5");
+            modifyXmlDoc.DocumentElement.AppendChild(newSpeedElement); // 添加到根节点下
+            // 保存修改后的xml文件
+            modifyXmlDoc.Save(savePath);
+        }
     }
 }
