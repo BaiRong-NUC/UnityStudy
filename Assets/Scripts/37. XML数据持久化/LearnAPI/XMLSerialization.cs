@@ -52,6 +52,7 @@ public class XMLSerialization : MonoBehaviour
         // 反序列化: 将序列化后的数据转换回对象的过程
         TestMsg testMsg = new TestMsg();
 
+        // 序列化: 
         // XmlSerializer: 用于序列化对象为xml的关键类
         // StreamWriter: 用于存储文件
         // using: 用于方便对象释放和销毁
@@ -77,5 +78,40 @@ public class XMLSerialization : MonoBehaviour
         // [XmlElement("name")] 设置元素节点,名称为name
         // [XmlArray("nameList")] 设置数组或列表的节点名称为nameList
         // [XmlArrayItem("name")] 设置数组或列表的子节点名称为name
+
+        // 3. 反序列化
+        if (File.Exists(path))
+        {
+            using (StreamReader stream = new StreamReader(path))
+            {
+                XmlSerializer xmlSerializer = new XmlSerializer(typeof(TestMsg));
+                TestMsg loadedMsg = xmlSerializer.Deserialize(stream) as TestMsg;
+
+                Debug.Log("Content: " + loadedMsg.content);
+                Debug.Log("Name: " + loadedMsg.name);
+                Debug.Log("Special Item Id: " + loadedMsg.specialItem.id);
+                Debug.Log("Special Item Number: " + loadedMsg.specialItem.number);
+
+                Debug.Log("Int Array: ");
+                foreach (int i in loadedMsg.intArray)
+                {
+                    Debug.Log(i);
+                }
+
+                Debug.Log("Int List: ");
+                foreach (int i in loadedMsg.intList)
+                {
+                    Debug.Log(i);
+                }
+
+                Debug.Log("Items List: ");
+                foreach (Item item in loadedMsg.items)
+                {
+                    Debug.Log("Item Id: " + item.id + ", Number: " + item.number);
+                }
+
+                // 注意: 因为测试类列表初始化时List列表有具体元素,反序列化会在原有的基础上插入,会导致列表有两份。数组是可以正常使用的
+            }
+        }
     }
 }
