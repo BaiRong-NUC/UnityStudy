@@ -94,6 +94,8 @@
      <Compile Include="Assets\Scripts\37. XML数据持久化\LearnAPI\IxmlserializableAPI.cs" />
      <Compile Include="Assets\Scripts\37. XML数据持久化\LearnAPI\LoadXML.cs" />
      <Compile Include="Assets\Scripts\37. XML数据持久化\LearnAPI\XMLSerialization.cs" />
+     <Compile Include="Assets\Scripts\37. XML数据持久化\TestXmlDataManage.cs" />
+     <Compile Include="Assets\Scripts\37. XML数据持久化\XmlDataManage.cs" />
      <Compile Include="Assets\Scripts\4. GameObject\TestGameObject.cs" />
      <Compile Include="Assets\Scripts\5. Time\TestTime.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Angle.cs" />
