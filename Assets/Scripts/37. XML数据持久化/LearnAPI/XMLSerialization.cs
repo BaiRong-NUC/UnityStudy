@@ -15,7 +15,7 @@ public class Item
 public class TestMsg
 {
     public string content = "测试信息类";
-    private int id = 0;
+    // private int id = 0;
     protected float time = 0;
     internal float score = 100.0f;
 
