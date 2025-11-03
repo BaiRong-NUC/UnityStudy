@@ -1,10 +1,59 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Xml;
 using System.Xml.Schema;
 using System.Xml.Serialization;
 using UnityEngine;
+
+// 自定义字典序列化类
+public class SerializationDictionary<TKey, TValue> : Dictionary<TKey, TValue>, IXmlSerializable
+{
+    public XmlSchema GetSchema()
+    {
+        return null;
+    }
+
+    public void ReadXml(XmlReader reader)
+    {
+        bool wasEmpty = reader.IsEmptyElement;
+        reader.Read();
+
+        if (wasEmpty)
+            return;
+
+        // TypeDescriptor.GetConverter 支持泛型类型的字符串转换
+        var keyConverter = TypeDescriptor.GetConverter(typeof(TKey));
+        var valueConverter = TypeDescriptor.GetConverter(typeof(TValue));
+
+        while (reader.NodeType == XmlNodeType.Element)
+        {
+            string keyStr = reader.GetAttribute("key");
+            string valueStr = reader.GetAttribute("value");
+
+            TKey key = (TKey)keyConverter.ConvertFromString(keyStr);
+            TValue value = (TValue)valueConverter.ConvertFromString(valueStr);
+
+            this.Add(key, value);
+            reader.Read(); // 读到下一个节点
+        }
+        // 读到父节点的结束,将结束节点读取,避免影响之后的数据读取
+        if (reader.NodeType == XmlNodeType.EndElement)
+            reader.Read();
+    }
+
+    public void WriteXml(XmlWriter writer)
+    {
+        foreach (TKey key in this.Keys)
+        {
+            writer.WriteStartElement("Item");
+            writer.WriteAttributeString("key", key.ToString());
+            writer.WriteAttributeString("value", this[key].ToString());
+            writer.WriteEndElement();
+        }
+    }
+}
 
 public class TestSerializableMsg : IXmlSerializable
 {
@@ -121,6 +170,34 @@ public class IxmlserializableAPI : MonoBehaviour
                 XmlSerializer serializer = new XmlSerializer(typeof(TestSerializableMsg));
                 TestSerializableMsg deserializedMsg = (TestSerializableMsg)serializer.Deserialize(reader);
                 print("IXmlSerializable 反序列化结果: content = " + deserializedMsg.content + ", id = " + deserializedMsg.id);
+            }
+        }
+
+        // 2. 自定义字典序列化类
+        SerializationDictionary<string, int> dict = new SerializationDictionary<string, int>
+        {
+            { "one", 1 },
+            { "two", 2 },
+            { "three", 3 }
+        };
+        string dictPath = Application.persistentDataPath + "/DictionarySerializable.xml";
+        print("自定义字典序列化文件路径: " + dictPath);
+        using (StreamWriter writer = new StreamWriter(dictPath))
+        {
+            XmlSerializer serializer = new XmlSerializer(typeof(SerializationDictionary<string, int>));
+            serializer.Serialize(writer, dict);
+        }
+
+        if (File.Exists(dictPath))
+        {
+            using (StreamReader reader = new StreamReader(dictPath))
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(SerializationDictionary<string, int>));
+                SerializationDictionary<string, int> deserializedDict = (SerializationDictionary<string, int>)serializer.Deserialize(reader);
+                foreach (var kvp in deserializedDict)
+                {
+                    print("自定义字典反序列化结果: Key = " + kvp.Key + ", Value = " + kvp.Value);
+                }
             }
         }
     }
