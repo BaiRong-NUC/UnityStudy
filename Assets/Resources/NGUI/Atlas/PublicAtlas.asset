@@ -28,8 +28,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: quanlity_0
-    x: 325
-    y: 315
+    x: 603
+    y: 216
     width: 98
     height: 98
     borderLeft: 0
@@ -41,8 +41,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: quanlity_1
-    x: 424
-    y: 414
+    x: 523
+    y: 315
     width: 98
     height: 98
     borderLeft: 0
@@ -54,19 +54,6 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: quanlity_2
-    x: 424
-    y: 315
-    width: 98
-    height: 98
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: quanlity_3
     x: 523
     y: 414
     width: 98
@@ -79,8 +66,8 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: quanlity_4
-    x: 523
+  - name: quanlity_3
+    x: 424
     y: 315
     width: 98
     height: 98
@@ -92,9 +79,22 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: quanlity_4
+    x: 424
+    y: 414
+    width: 98
+    height: 98
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: quanlity_5
-    x: 603
-    y: 216
+    x: 325
+    y: 315
     width: 98
     height: 98
     borderLeft: 0
@@ -180,6 +180,136 @@ MonoBehaviour:
     borderTop: 0
     borderBottom: 0
     paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_TY_lvseshuzi_00
+    x: 74
+    y: 13
+    width: 21
+    height: 28
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 1
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_TY_lvseshuzi_01
+    x: 57
+    y: 14
+    width: 16
+    height: 27
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 3
+    paddingRight: 3
+    paddingTop: 1
+    paddingBottom: 0
+  - name: ui_TY_lvseshuzi_02
+    x: 36
+    y: 14
+    width: 20
+    height: 27
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 1
+    paddingRight: 1
+    paddingTop: 1
+    paddingBottom: 0
+  - name: ui_TY_lvseshuzi_03
+    x: 580
+    y: 286
+    width: 21
+    height: 28
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 1
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_TY_lvseshuzi_04
+    x: 557
+    y: 287
+    width: 22
+    height: 27
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 1
+    paddingBottom: 0
+  - name: ui_TY_lvseshuzi_05
+    x: 536
+    y: 286
+    width: 20
+    height: 28
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 1
+    paddingRight: 1
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_TY_lvseshuzi_06
+    x: 514
+    y: 286
+    width: 21
+    height: 28
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 1
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_TY_lvseshuzi_07
+    x: 493
+    y: 287
+    width: 20
+    height: 27
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 1
+    paddingRight: 1
+    paddingTop: 1
+    paddingBottom: 0
+  - name: ui_TY_lvseshuzi_08
+    x: 471
+    y: 286
+    width: 21
+    height: 28
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 1
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_TY_lvseshuzi_09
+    x: 96
+    y: 13
+    width: 21
+    height: 28
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 1
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
