@@ -335,7 +335,7 @@ GameObject:
   m_Component:
   - component: {fileID: 128396959}
   m_Layer: 0
-  m_Name: 39. NGUIRoot
+  m_Name: "39. NGUI\u4E09\u5927\u57FA\u7840\u7EC4\u4EF6"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5040,7 +5040,7 @@ Transform:
   m_GameObject: {fileID: 1360489365}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 74.75023, y: 49.75168, z: 5.7973833}
-  m_LocalScale: {x: 0.0027777778, y: 0.0027777778, z: 0.0027777778}
+  m_LocalScale: {x: 0.0057142857, y: 0.0057142857, z: 0.0057142857}
   m_Children:
   - {fileID: 1319712033}
   - {fileID: 1844178075}
@@ -5126,7 +5126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c5ecb5660b11414fb042fb826e03b73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scalingStyle: 1
+  scalingStyle: 0
   manualWidth: 1280
   manualHeight: 720
   minimumHeight: 700
@@ -5134,7 +5134,7 @@ MonoBehaviour:
   fitWidth: 0
   fitHeight: 1
   adjustByDPI: 1
-  shrinkPortraitUI: 0
+  shrinkPortraitUI: 1
 --- !u!1 &1373925248
 GameObject:
   m_ObjectHideFlags: 0
