@@ -244,6 +244,7 @@
      <Compile Include="Assets\Scripts\4. GameObject\TestGameObject.cs" />
      <Compile Include="Assets\Scripts\41. NGUI基础控件\Label\TestLabel.cs" />
      <Compile Include="Assets\Scripts\41. NGUI基础控件\Sprite\TestSprite.cs" />
+     <Compile Include="Assets\Scripts\41. NGUI基础控件\Texture\TestTexture.cs" />
      <Compile Include="Assets\Scripts\5. Time\TestTime.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Angle.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Scale.cs" />
