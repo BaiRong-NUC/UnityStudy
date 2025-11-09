@@ -248,6 +248,7 @@
      <Compile Include="Assets\Scripts\42. NGUI组合控件\NGUI Button\TestNGUIButton.cs" />
      <Compile Include="Assets\Scripts\42. NGUI组合控件\NGUI Input\TestNGUIInput.cs" />
      <Compile Include="Assets\Scripts\42. NGUI组合控件\NGUI PopupList\TestPopupList.cs" />
+     <Compile Include="Assets\Scripts\42. NGUI组合控件\NGUI ScrollBar&amp;ProgressBar\TestNGUIBar.cs" />
      <Compile Include="Assets\Scripts\42. NGUI组合控件\NGUI Slider\TestNGUISlider.cs" />
      <Compile Include="Assets\Scripts\42. NGUI组合控件\NGUI Toggle\TestNGUIToggle.cs" />
      <Compile Include="Assets\Scripts\5. Time\TestTime.cs" />
