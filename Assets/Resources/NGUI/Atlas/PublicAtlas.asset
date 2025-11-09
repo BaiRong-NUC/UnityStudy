@@ -110,10 +110,10 @@ MonoBehaviour:
     y: 221
     width: 359
     height: 57
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
+    borderLeft: 98
+    borderRight: 143
+    borderTop: 37
+    borderBottom: 39
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
