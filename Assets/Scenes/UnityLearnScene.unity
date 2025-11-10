@@ -2514,7 +2514,7 @@ MonoBehaviour:
   springStrength: 8
   dampenStrength: 9
   horizontalScrollBar: {fileID: 0}
-  verticalScrollBar: {fileID: 0}
+  verticalScrollBar: {fileID: 907137537}
   showScrollBars: 1
   customMovement: {x: 1, y: 0}
   contentPivot: 0
@@ -2880,7 +2880,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3000
+  startingRenderQueue: 3002
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mAlphaProp: 
@@ -3789,7 +3789,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3000
+  startingRenderQueue: 3002
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mAlphaProp: 
@@ -5040,7 +5040,7 @@ MonoBehaviour:
   thumb: {fileID: 0}
   mBG: {fileID: 907137535}
   mFG: {fileID: 1920796598}
-  mValue: 1
+  mValue: 0.022727255
   mFill: 3
   numberOfSteps: 0
   onChange: []
@@ -5048,7 +5048,7 @@ MonoBehaviour:
   rawValue: 1
   direction: 2
   mInverted: 0
-  mSize: 1
+  mSize: 0.7953488
   mScroll: 0
   mDir: 2
 --- !u!1 &914614414
