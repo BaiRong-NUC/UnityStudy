@@ -253,6 +253,7 @@
      <Compile Include="Assets\Scripts\42. NGUI组合控件\NGUI ScrollView\TestNGUIScrollView.cs" />
      <Compile Include="Assets\Scripts\42. NGUI组合控件\NGUI Slider\TestNGUISlider.cs" />
      <Compile Include="Assets\Scripts\42. NGUI组合控件\NGUI Toggle\TestNGUIToggle.cs" />
+     <Compile Include="Assets\Scripts\43. NGUI Anchor\TestNGUIAnchor.cs" />
      <Compile Include="Assets\Scripts\5. Time\TestTime.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Angle.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Scale.cs" />
