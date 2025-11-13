@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a3c1ecb0cfff2e4d9d70fbd9552f19a, type: 3}
+  m_Name: PublicFont
+  m_EditorClassIdentifier: 
+  mType: 0
+  mMat: {fileID: 2100000, guid: 513b6a7aedac2d744b97c0efb9608e46, type: 2}
+  mUVRect:
+    serializedVersion: 2
+    x: 0.5957031
+    y: 0.11328125
+    width: 0.0625
+    height: 0.125
+  mFont:
+    mSize: 33
+    mBase: 0
+    mWidth: 64
+    mHeight: 64
+    mSpriteName: PublicFont
+    mSaved:
+    - index: 32
+      x: 0
+      y: 15
+      width: 0
+      height: -15
+      offsetX: 0
+      offsetY: 15
+      advance: 8
+      channel: 15
+      kerning: 
+    - index: 72
+      x: 0
+      y: 39
+      width: 19
+      height: 25
+      offsetX: 1
+      offsetY: 3
+      advance: 20
+      channel: 15
+      kerning: 
+    - index: 101
+      x: 19
+      y: 44
+      width: 20
+      height: 20
+      offsetX: -1
+      offsetY: 9
+      advance: 18
+      channel: 15
+      kerning: 
+    - index: 108
+      x: 0
+      y: 15
+      width: 9
+      height: 24
+      offsetX: 0
+      offsetY: 4
+      advance: 10
+      channel: 15
+      kerning: 
+    - index: 111
+      x: 39
+      y: 44
+      width: 19
+      height: 20
+      offsetX: -1
+      offsetY: 9
+      advance: 18
+      channel: 15
+      kerning: 
+  mAtlas: {fileID: 11400000, guid: c80aecc04c494f6429598a7ebcff8e0d, type: 2}
+  mReplacement: {fileID: 0}
+  mSybolAtlas: {fileID: 0}
+  mSymbolScale: 1
+  mSymbolOffset: 0
+  mSymbolMaxHeight: 0
+  mSymbols: []
+  mDynamicFont: {fileID: 0}
+  mDynamicFontSize: 16
+  mDynamicFontStyle: 0
+  mSpaceWidth: 0
