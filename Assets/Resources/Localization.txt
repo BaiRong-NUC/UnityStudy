@@ -1,0 +1,3 @@
+KEY,中文,English
+volume,音量,Volume
+name,名称,Name

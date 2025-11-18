@@ -257,6 +257,7 @@
      <Compile Include="Assets\Scripts\44. NGUI EventListener&amp;EventTrigger\EventPanel.cs" />
      <Compile Include="Assets\Scripts\44. NGUI EventListener&amp;EventTrigger\TestEvent.cs" />
      <Compile Include="Assets\Scripts\47. NGUI缓动\NGUITween.cs" />
+     <Compile Include="Assets\Scripts\49. NGUI 其他知识点\NGUIExtension.cs" />
      <Compile Include="Assets\Scripts\5. Time\TestTime.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Angle.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Scale.cs" />
@@ -292,7 +293,6 @@
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored (TextureClip).shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 1.shader" />
-     <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
      <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
      <None Include="Assets\NGUI\Examples\Shaders\Refractive.shader" />
@@ -303,6 +303,7 @@
      <None Include="Assets\Resources\BMFont.fnt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 1.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 3.shader" />
+     <None Include="Assets\Resources\Localization.txt" />
      <None Include="Assets\StreamingAssets\Test.xml" />
      <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
      <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
