@@ -256,6 +256,7 @@
      <Compile Include="Assets\Scripts\43. NGUI Anchor\TestNGUIAnchor.cs" />
      <Compile Include="Assets\Scripts\44. NGUI EventListener&amp;EventTrigger\EventPanel.cs" />
      <Compile Include="Assets\Scripts\44. NGUI EventListener&amp;EventTrigger\TestEvent.cs" />
+     <Compile Include="Assets\Scripts\47. NGUI缓动\NGUITween.cs" />
      <Compile Include="Assets\Scripts\5. Time\TestTime.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Angle.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Scale.cs" />
