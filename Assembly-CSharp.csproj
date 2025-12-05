@@ -259,6 +259,7 @@
      <Compile Include="Assets\Scripts\47. NGUI缓动\NGUITween.cs" />
      <Compile Include="Assets\Scripts\49. NGUI 其他知识点\NGUIExtension.cs" />
      <Compile Include="Assets\Scripts\5. Time\TestTime.cs" />
+     <Compile Include="Assets\Scripts\51. Unity 图片资源导入\ImportSprite.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Angle.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Scale.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Vector.cs" />
