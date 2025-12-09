@@ -260,7 +260,7 @@
      <Compile Include="Assets\Scripts\49. NGUI 其他知识点\NGUIExtension.cs" />
      <Compile Include="Assets\Scripts\5. Time\TestTime.cs" />
      <Compile Include="Assets\Scripts\51. Unity 图片资源导入\ImportSprite.cs" />
-     <Compile Include="Assets\Scripts\52. Unity SpriteEditor\SpriteRender.cs" />
+     <Compile Include="Assets\Scripts\52. Unity Sprite\SpriteRender.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Angle.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Scale.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Vector.cs" />
@@ -873,6 +873,9 @@
     <Reference Include="Unity.Rider.Editor">
         <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
         <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
@@ -881,9 +884,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
