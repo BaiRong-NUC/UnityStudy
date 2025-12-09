@@ -261,6 +261,7 @@
      <Compile Include="Assets\Scripts\5. Time\TestTime.cs" />
      <Compile Include="Assets\Scripts\51. Unity 图片资源导入\ImportSprite.cs" />
      <Compile Include="Assets\Scripts\52. Unity Sprite\SpriteRender.cs" />
+     <Compile Include="Assets\Scripts\52. Unity Sprite\TestSpriteAtlas.cs" />
      <Compile Include="Assets\Scripts\52. Unity Sprite\TestSpriteMask.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Angle.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Scale.cs" />
