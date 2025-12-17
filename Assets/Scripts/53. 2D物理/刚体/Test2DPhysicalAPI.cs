@@ -44,7 +44,12 @@ public class Test2DPhysicalAPI : MonoBehaviour
         // Bounciness 弹性系数,影响物体接触时的反弹能力,值越大弹力越大 0-1之间
         // 材质优先级: 碰撞器材质>刚体材质>默认材质 
 
-        // 15. API
+        // 16. 恒定力脚本ContantForce2D（物理帧间隔）
+        // Force 恒定力,作用在刚体上的持续力(世界坐标系)
+        // Reaction Force 相对与刚体对象坐标系的恒定力
+        // Torque 恒定力矩,作用在刚体上的持续力矩(旋转力,绕z轴) 
+
+        // 17. API
         // 加力
         Rigidbody2D rb2d = GetComponent<Rigidbody2D>();
         rb2d.AddForce(Vector2.right * 10f, ForceMode2D.Force); // 持续加力
