@@ -26,5 +26,14 @@ public class TestEffectorAPI : MonoBehaviour
         // - Flow Angle: 流动方向角度，以度为单位。
         // - Flow Magnitude: 流动速度大小。
         // - Flow Variation: 流动速度的随机变化范围。
+
+        // 4. 点效应器: 模拟磁力或引力效果的效应器。
+        // - Distance Scale: 距离缩放系数，影响力随距离变化的程度。
+        // - Force Source: 力的来源位置，可以是物体中心或碰撞体接触点。(Rigidbody2D 会旋转/Collider2D 会旋转)
+        // - Force Target: 作用力目标位置,用于更改点计算位置(Rigidbody2D 会旋转/Collider2D 会旋转)
+        // - Force Mode: 计算力的模式
+        //       - Constant: 恒定力，不随距离变化。
+        //       - Inverse Square: 反平方力，力的大小呈反平方关系。
+        //       - Inverse Linear: 反线性力，随距离反向线性变化。
     }
 }
