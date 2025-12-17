@@ -44,5 +44,13 @@ public class TestEffectorAPI : MonoBehaviour
         // - Use Side Friction: 是否启用侧面摩擦力。
         // - Use Side Bounce: 是否启用侧面弹力。
         // - Side Arc: 侧面宽度范围。
+
+        //6. 表面效应器:主要模拟传送带效果的效应器。Is Trigger 不选中。(Surface Effector)
+        // - Speed: 传送带的速度。
+        // - Speed Variation: 传送带速度的随机变化范围。
+        // - Force Scale: 缩放沿表面移动时施加的力。如果是0表示不施加力，相当于禁用。值越低越慢，值越高越快，建议不要设置为1,因为当设置
+        // - Use Contact Force: 是否使用接触力。可能会使物体旋转
+        // - Use Friction: 是否使用摩擦力。
+        // - Use Bounce: 是否使用弹力。
     }
 }
