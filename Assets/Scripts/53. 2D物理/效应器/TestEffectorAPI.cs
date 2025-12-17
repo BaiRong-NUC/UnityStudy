@@ -1,0 +1,30 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class TestEffectorAPI : MonoBehaviour
+{
+    void Start()
+    {
+        // 1. 2D效应器是配合2D碰撞体使用的,可以让游戏对象在互相接触时产生一些特殊的物理作用力,通过2D效应器可以快捷的实现
+        // 互斥，吸引，传送带，单向碰撞等物理效果。效应器组件必须和2D碰撞体组件一起使用，并且2D碰撞体组件的Used Effector属性必须勾选上。且 Is Trigger 属性也必须勾选上。
+
+        // 2. 区域效应器: 在一个区域内对进入该区域的刚体施加力和扭矩力的效应器。
+        // - Use Collider Mask: 是否使用碰撞体遮罩。
+        // - Collider Mask: 碰撞体遮罩，用于指定哪些碰撞体会受到效应器的影响。
+        // - Use Global Angle: 是否使用世界坐标角度。
+        // - Force Angle: 力的角度，以度为单位。
+        // - Force Magnitude: 力的大小。
+        // - Force Variation: 力的随机变化范围。
+        // - Force Target: 力的作用目标，刚体(无法旋转)/碰撞体(可以旋转)
+        // - Drag: 线性阻力系数。
+        // - Angular Drag: 角阻力系数。
+
+        // 3. 浮力效应器: 用于模拟物体在液体中浮力效果的效应器。
+        // - Density: 浮力密度。
+        // - Surface Level: 液体表面高度。物体低于该高度时会受到浮力影响。
+        // - Flow Angle: 流动方向角度，以度为单位。
+        // - Flow Magnitude: 流动速度大小。
+        // - Flow Variation: 流动速度的随机变化范围。
+    }
+}

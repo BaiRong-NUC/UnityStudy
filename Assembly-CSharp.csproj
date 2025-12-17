@@ -265,6 +265,7 @@
      <Compile Include="Assets\Scripts\52. Unity Sprite\TestSpriteMask.cs" />
      <Compile Include="Assets\Scripts\53. 2D物理\刚体\Test2DColiderAPI.cs" />
      <Compile Include="Assets\Scripts\53. 2D物理\刚体\Test2DPhysicalAPI.cs" />
+     <Compile Include="Assets\Scripts\53. 2D物理\效应器\TestEffectorAPI.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Angle.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Scale.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Vector.cs" />
