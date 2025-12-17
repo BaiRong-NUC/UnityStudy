@@ -36,7 +36,7 @@ public class TestEffectorAPI : MonoBehaviour
         //       - Inverse Square: 反平方力，力的大小呈反平方关系。
         //       - Inverse Linear: 反线性力，随距离反向线性变化。
 
-        // 5. 平台效应器: 用于创建单向平台效果的效应器。Is Trigger 不选中。 可以从下面穿过平台跳上去。
+        // 5. 平台效应器: 用于创建单向平台效果的效应器。Is Trigger 不选中。 可以从下面穿过平台跳上去。(Platform Effector)
         // - Rotational Offset: 平台的旋转偏移角度。
         // - Use One Way: 是否启用单向碰撞。
         // - Use One Way Grouping: 当平台式有多个碰撞器组合时，可以通过它们的组合来实现单向碰撞效果。(常用于平台上有多个碰撞器)
