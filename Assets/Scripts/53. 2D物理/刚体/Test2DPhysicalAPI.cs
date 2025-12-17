@@ -39,6 +39,11 @@ public class Test2DPhysicalAPI : MonoBehaviour
         //Kinematic运动学刚体：通过刚体API移动的对象，不受力的作用，但是想要进行碰撞检测
         //Static静态刚体：不动不受力作用的静态物体，但是想要进行碰撞检测。且只和Dynamic动态刚体产生碰撞
 
+        // 15. 物理材质 Create->Physics2D Material
+        // Friction 摩擦系数,影响物体接触时的滑动阻力,值越大摩擦力越大 0-1之间
+        // Bounciness 弹性系数,影响物体接触时的反弹能力,值越大弹力越大 0-1之间
+        // 材质优先级: 碰撞器材质>刚体材质>默认材质 
+
         // 15. API
         // 加力
         Rigidbody2D rb2d = GetComponent<Rigidbody2D>();
