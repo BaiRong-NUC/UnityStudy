@@ -181,6 +181,13 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UITexture.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
+     <Compile Include="Assets\Samples\2D SpriteShape\3.0.18\Sprite Shape Extras\Scripts\Clipper.cs" />
+     <Compile Include="Assets\Samples\2D SpriteShape\3.0.18\Sprite Shape Extras\Scripts\ConformingSpline.cs" />
+     <Compile Include="Assets\Samples\2D SpriteShape\3.0.18\Sprite Shape Extras\Scripts\GenerateSpriteShapes.cs" />
+     <Compile Include="Assets\Samples\2D SpriteShape\3.0.18\Sprite Shape Extras\Scripts\GeometryCollider.cs" />
+     <Compile Include="Assets\Samples\2D SpriteShape\3.0.18\Sprite Shape Extras\Scripts\LegacyCollider.cs" />
+     <Compile Include="Assets\Samples\2D SpriteShape\3.0.18\Sprite Shape Extras\Scripts\SimpleDraw.cs" />
+     <Compile Include="Assets\Samples\2D SpriteShape\3.0.18\Sprite Shape Extras\Scripts\Sprinkler.cs" />
      <Compile Include="Assets\Scripts\1. 生命周期函数\Life.cs" />
      <Compile Include="Assets\Scripts\1. 生命周期函数\Life_.cs" />
      <Compile Include="Assets\Scripts\10. Screen\TestScreen.cs" />
@@ -266,6 +273,7 @@
      <Compile Include="Assets\Scripts\53. 2D物理\刚体\Test2DColiderAPI.cs" />
      <Compile Include="Assets\Scripts\53. 2D物理\刚体\Test2DPhysicalAPI.cs" />
      <Compile Include="Assets\Scripts\53. 2D物理\效应器\TestEffectorAPI.cs" />
+     <Compile Include="Assets\Scripts\54.SpriteShape\TestSpriteShape.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Angle.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Scale.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Vector.cs" />
@@ -889,6 +897,33 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.SpriteShape.Editor">
+        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Path.Editor">
+        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEngineBridge.001">
+        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Common.Runtime">
+        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.SpriteShape.Runtime">
+        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Common.Editor">
+        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEditorBridge.001">
+        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
