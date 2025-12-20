@@ -22,8 +22,14 @@ public class TestTileMap : MonoBehaviour
         //   - Sprite: 使用Sprite的轮廓生成碰撞器形状
         //   - Grid: 基于瓦片单元格生成碰撞器形状
 
-        // TilePanel瓦片调色板窗口:
+        // TilePanel瓦片调色板窗口: 编辑好的地图,拖进场景中,激活TileMapRenderer组件即可显示地图
         // 1. 参数: 
-        
+        // - Name: 瓦片调色板名称
+        // - Grid: 瓦片的网格布局(矩形/六边形/等距)
+        // - Hexagon Type: 六边形瓦片地图类型; Point Top: 点朝顶部的六边形; Flat Top: 面朝顶部的六边形
+        // - Cell Size: 瓦片绘制到单元格的大小
+
+        // 2. 使用: Hierarchy->2D Object -> Tilemap,之后在Tile Palette窗口中选择瓦片后再场景中绘制
+        // Grade下面的子节点代表不同层级的地图
     }
 }
