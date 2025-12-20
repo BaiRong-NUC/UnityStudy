@@ -1777,7 +1777,7 @@ SpriteShapeRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 281707717}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 0
@@ -8307,7 +8307,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &983093402
 Transform:
   m_ObjectHideFlags: 0
@@ -21613,6 +21613,36 @@ MonoBehaviour:
   mFill: 0
   numberOfSteps: 0
   onChange: []
+--- !u!1 &2109598403
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2109598404}
+  m_Layer: 0
+  m_Name: 55.Unity Tilemap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2109598404
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109598403}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.7458715, y: 1.24285, z: -6.970436}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 38
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2116159672
 GameObject:
   m_ObjectHideFlags: 0
@@ -21936,7 +21966,7 @@ SpriteShapeRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2120939550}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 0
@@ -22019,113 +22049,7 @@ CompositeCollider2D:
   m_GeometryType: 0
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths:
-  - m_Collider: {fileID: 2120939556}
-    m_ColliderPaths:
-    - - X: -20007072
-        Y: -20007072
-      - X: -21740174
-        Y: -17993102
-      - X: -23172548
-        Y: -15748258
-      - X: -24317492
-        Y: -13302815
-      - X: -25186700
-        Y: -10689366
-      - X: -25792276
-        Y: -7939892
-      - X: -26146346
-        Y: -5086365
-      - X: -26230516
-        Y: -1358769
-      - X: -26148294
-        Y: 805031
-      - X: -25820348
-        Y: 3778992
-      - X: -24567012
-        Y: 9623675
-      - X: -23665766
-        Y: 12430490
-      - X: -22597546
-        Y: 15117683
-      - X: -21174006
-        Y: 17998402
-      - X: -19163874
-        Y: 21186746
-      - X: -17119060
-        Y: 23306668
-      - X: -13356533
-        Y: 25877876
-      - X: -10535303
-        Y: 27184984
-      - X: -6092297
-        Y: 28532872
-      - X: -1705625
-        Y: 29142578
-      - X: 2479069
-        Y: 29020970
-      - X: 7006289
-        Y: 28185730
-      - X: 10068370
-        Y: 27223740
-      - X: 13022399
-        Y: 25930708
-      - X: 15745624
-        Y: 24300662
-      - X: 18115258
-        Y: 22327588
-      - X: 20008362
-        Y: 20005488
-      - X: 21386114
-        Y: 17660852
-      - X: 22617740
-        Y: 15130669
-      - X: 23691586
-        Y: 12447069
-      - X: 25319118
-        Y: 6748360
-      - X: 25849404
-        Y: 3797620
-      - X: 26175074
-        Y: 822197
-      - X: 26284416
-        Y: -2145723
-      - X: 26165710
-        Y: -5073957
-      - X: 25807224
-        Y: -7930322
-      - X: 24926076
-        Y: -11494915
-      - X: 24323940
-        Y: -13298682
-      - X: 23175654
-        Y: -15746269
-      - X: 21740606
-        Y: -17993150
-      - X: 19012756
-        Y: -20922876
-      - X: 15682898
-        Y: -23160102
-      - X: 10646667
-        Y: -25136230
-      - X: 5263138
-        Y: -26250350
-      - X: -186460
-        Y: -26834064
-      - X: -3169864
-        Y: -26792230
-      - X: -7873139
-        Y: -26060052
-      - X: -12505337
-        Y: -24616398
-      - X: -15362701
-        Y: -23309652
-      - X: -17901550
-        Y: -21763064
-      - X: -19015658
-        Y: -20909340
-      - X: -20007072
-        Y: -20007072
+  m_ColliderPaths: []
   m_CompositePaths:
     m_Paths:
     - - {x: -0.0186469, y: -2.6834064}
