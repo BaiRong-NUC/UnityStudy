@@ -7,7 +7,7 @@ TextureImporter:
     second: RobotBoyWalk00
   - first:
       213: 21300002
-    second: RobotBoyWalk01
+    second: RobotBoyWalk-01
   - first:
       213: 21300004
     second: RobotBoyWalk02
@@ -178,7 +178,7 @@ TextureImporter:
         y: 1773
         width: 275
         height: 275
-      alignment: 0
+      alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -192,15 +192,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RobotBoyWalk01
+      name: RobotBoyWalk-01
       rect:
         serializedVersion: 2
         x: 275
         y: 1773
         width: 275
         height: 275
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -509,7 +509,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9be109c96f0183f47b7fa1e373cb728e
     internalID: 0
     vertices: []
     indices: 
