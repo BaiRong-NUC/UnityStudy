@@ -274,6 +274,7 @@
      <Compile Include="Assets\Scripts\53. 2D物理\刚体\Test2DPhysicalAPI.cs" />
      <Compile Include="Assets\Scripts\53. 2D物理\效应器\TestEffectorAPI.cs" />
      <Compile Include="Assets\Scripts\54.SpriteShape\TestSpriteShape.cs" />
+     <Compile Include="Assets\Scripts\55.TileMap\Exercise\PlayerMove\PlayerMove.cs" />
      <Compile Include="Assets\Scripts\55.TileMap\TestTileMap.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Angle.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Scale.cs" />
@@ -904,6 +905,9 @@
     </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
         <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
         <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
