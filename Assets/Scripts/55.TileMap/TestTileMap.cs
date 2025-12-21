@@ -34,5 +34,28 @@ public class TestTileMap : MonoBehaviour
         // 注意: 使用Isometric Z As Y选项,需要修改Edit->Project Settings->2D->Graphics->Transparency Sort Mode为Custom Axis,并设置Axis为(0,1,-0.26)
         // 同时修改Tilemap Renderer组件的Mode为Individual
         // Can change Z Position: 可以编辑瓦片z的位置,在吸取瓦片时开启可以使用快捷键+-调整z位置,同一格子不同Z可以绘制不同瓦片
+
+        // 三. Grid组件参数:
+        // - Cell Size: 单元格大小
+        // - Cell Gap: 单元格间隙
+        // - Cell Layout: 单元格布局(矩形/六边形/等距)
+        // - Cell Swizzle: 单元格轴重排(默认XYZ)
+
+        // 四. Tilemap组件参数:
+        // - Color: 瓦片颜色
+        // - Animation Frame Rate: 瓦片动画帧率,相当于倍速
+        // - Tile Anchor: 瓦片锚点位置
+        // - Orientation: 瓦片方向(默认水平),相当于2D游戏使用Unity的那个轴
+
+        // 五. Tilemap Renderer组件参数:
+        // - Sort Order: 设置瓦片地图中瓦片的排序方向(默认左下角为原点)
+        // - Mode: 瓦片渲染模式(Chunk: 批处理模式, Individual: 独立模式)
+        //         Individual:单独渲染每个瓦片，会考虑他们的位置和排序顺序。会让瓦片精灵和场景中其它渲染器或自定义排序轴进行交互
+        // - Delete Chunk Culling: 渲染器如何去除瓦片边界
+        // - Chunk Culling Bounds:当选择手动设置剔除拓展边界时，可以在这里自己填写拓展的值
+
+        // 六. 瓦片地图碰撞器:
+        //     为挂载TilemapRenerer脚本的对象添加Tilemap collider2D脚本会自动添加碰撞器
+        //     注意:想要生成碰撞器的瓦片Collider Type类型要进行设置，同理也可以使用复合碰撞器来优化碰撞体数量
     }
 }
