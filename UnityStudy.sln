@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{37d7d53a-46bb-c543-6011-5f44aa481467}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.Tilemap.Extras", "Unity.2D.Tilemap.Extras.csproj", "{dd9c970d-fa8c-345e-e5f7-f9c2a7fc29e6}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{be2744b3-8e37-c12e-6075-ff059c8c22c5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.Tilemap.Extras.Editor", "Unity.2D.Tilemap.Extras.Editor.csproj", "{9dbd635e-d57d-d527-ef89-dd0c01203d29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.Tilemap.Extras.Placeholder.EditorTests", "Unity.2D.Tilemap.Extras.Placeholder.EditorTests.csproj", "{07c002dd-2b35-c703-5f7b-e4f4b95cae3a}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,8 +18,14 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{37d7d53a-46bb-c543-6011-5f44aa481467}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{37d7d53a-46bb-c543-6011-5f44aa481467}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{dd9c970d-fa8c-345e-e5f7-f9c2a7fc29e6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{dd9c970d-fa8c-345e-e5f7-f9c2a7fc29e6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{be2744b3-8e37-c12e-6075-ff059c8c22c5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{be2744b3-8e37-c12e-6075-ff059c8c22c5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9dbd635e-d57d-d527-ef89-dd0c01203d29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9dbd635e-d57d-d527-ef89-dd0c01203d29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07c002dd-2b35-c703-5f7b-e4f4b95cae3a}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07c002dd-2b35-c703-5f7b-e4f4b95cae3a}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
