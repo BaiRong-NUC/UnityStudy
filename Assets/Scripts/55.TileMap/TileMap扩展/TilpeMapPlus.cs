@@ -14,5 +14,12 @@ public class TilpeMapPlus : MonoBehaviour
         //     - 绿色代表有图片,红色代表没有图片,当满足条件时,则使用该规则的图片
 
         // 2. 动画瓦片 可以指定序列帧,产生可以播放序列帧动画的瓦片
+        // - Number Of Animated Sprites: 序列帧数量
+        // - Minimum Speed: 最小播放速度
+        // - Maximum Speed: 最大播放速度
+        // - Start Time: 开始播放的时间
+        // - Start Frame: 从哪一帧开始播放
+
+        // 3. 管道瓦片 根据自己相邻瓦片数量更换显示的图片
     }
 }
