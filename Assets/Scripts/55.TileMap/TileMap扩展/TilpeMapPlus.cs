@@ -21,5 +21,7 @@ public class TilpeMapPlus : MonoBehaviour
         // - Start Frame: 从哪一帧开始播放
 
         // 3. 管道瓦片 根据自己相邻瓦片数量更换显示的图片
+        // - None: 没有相邻瓦片
+        // - One-Four: 1-4个相邻瓦片时使用的图片
     }
 }
