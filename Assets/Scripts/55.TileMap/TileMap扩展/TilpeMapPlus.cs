@@ -27,5 +27,27 @@ public class TilpeMapPlus : MonoBehaviour
         // 4. 随机瓦片 根据设置的概率随机显示不同的图片
         // - Number Of Random Sprites: 随机瓦片数量
 
+        // 5. 地形瓦片 和规则瓦片类似
+        // - Filled:填满
+        // - Three Sides:三个面
+        // - Two Sides and One Corner:两面一角
+        // - Two Adjacent Sides:相邻两侧
+        // - Two Opposite Sides:两个相对的侧面
+        // - One Side and Two Corners:一侧和两个角
+        // - One Side and One Upper Corner:一侧和上角
+        // - One Side:一侧
+        // - Four Corners:四个角
+        // - Three Corners:三个角
+        // - Two Adjacent Corners:两个相邻角
+        // - Two Opposite Corners:两个相反的角
+        // - One Corner:一个角
+        // - Empty:空
+
+        // 6. 权重随机瓦片 Weighted Random Tiles 根据设置的权重随机显示不同的图片
+        // - 可以不平均随机分配图片的概率
+
+        // 7. (高级)规则覆盖瓦片 (Advanced Rule Override Tiles/Rule Override Tiles) 可以在规则瓦片的基础上进行更复杂的规则设置
+        // - Tile: 关联的规则瓦片
+        // - 在相同的规则下使用新设置的图片
     }
 }
