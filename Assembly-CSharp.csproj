@@ -278,6 +278,7 @@
      <Compile Include="Assets\Scripts\55.TileMap\Exercise\PlayerMove\PlayerMove.cs" />
      <Compile Include="Assets\Scripts\55.TileMap\TestTileMap.cs" />
      <Compile Include="Assets\Scripts\55.TileMap\TileMap扩展\TilpeMapPlus.cs" />
+     <Compile Include="Assets\Scripts\55.TileMap\TileMap笔刷拓展\TestBrush.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Angle.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Scale.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Vector.cs" />
