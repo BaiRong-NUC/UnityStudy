@@ -23,5 +23,9 @@ public class TilpeMapPlus : MonoBehaviour
         // 3. 管道瓦片 根据自己相邻瓦片数量更换显示的图片
         // - None: 没有相邻瓦片
         // - One-Four: 1-4个相邻瓦片时使用的图片
+
+        // 4. 随机瓦片 根据设置的概率随机显示不同的图片
+        // - Number Of Random Sprites: 随机瓦片数量
+
     }
 }
