@@ -283,6 +283,7 @@
      <Compile Include="Assets\Scripts\56. Animation\AnimationAPI\TestAnimationAPI.cs" />
      <Compile Include="Assets\Scripts\56. Animation\Animation状态机\NewAnimation.cs" />
      <Compile Include="Assets\Scripts\56. Animation\TestAnimation.cs" />
+     <Compile Include="Assets\Scripts\56. Animation\序列帧动画\Animation2D.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Angle.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Scale.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Vector.cs" />
