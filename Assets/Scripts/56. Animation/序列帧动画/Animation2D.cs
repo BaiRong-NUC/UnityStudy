@@ -11,10 +11,16 @@ public class Animation2D : MonoBehaviour
     int nowIndex = 0; // 当前显示的图片索引
 
     private SpriteRenderer spriteRenderer; // 用于显示图片的SpriteRenderer组件
+
+    public Animator animator;
+
+    bool isDown = false;
     void Start()
     {
         this.spriteRenderer = this.GetComponent<SpriteRenderer>();
         this.spriteRenderer.sprite = sprites[0];
+
+        // this.animator = this.GetComponent<Animator>();
     }
 
     void Update()
@@ -29,6 +35,17 @@ public class Animation2D : MonoBehaviour
                 nowIndex = 0;
             }
             this.spriteRenderer.sprite = sprites[nowIndex];
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && !isDown)
+        {
+            isDown = true;
+            this.animator.SetBool("isDown", true);
+        }
+        if (Input.GetKeyUp(KeyCode.Space) && isDown)
+        {
+            isDown = false;
+            this.animator.SetBool("isDown", false);
         }
     }
 }
