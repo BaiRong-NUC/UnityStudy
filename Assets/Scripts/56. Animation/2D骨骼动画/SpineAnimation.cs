@@ -77,5 +77,30 @@ public class SpineAnimation : MonoBehaviour
         // 6. PSD,PSB文件骨骼动画制作:PSD,PSB的两种格式是Photoshop保存图像数据的文件格式。
         //    - PSD兼容其他的软件,PSB只能用PhotoShop打开.
         //    - 在Unity中常使用PSB格式的文件,需要引入2D PSD Importer包
+        //    - 优点: 因为PSB文件的图相对位置已经确定,所以在制作动画时不需要拼凑角色,直接对各个部位进行骨骼绑定和动画制作即可
+        /**
+            PSB/PSD文件属性参数:
+              - Extrude Edges: 图片边缘延伸网格
+              - Import Hidden : 是否隐藏PSB文件中隐藏的图层
+              - Moszic: 启用后将图层生成Sprite,并将他们生成图集(一般勾选)
+              - Charactor Rig: 是否启用人物已经绑定好的骨骼(一般勾选)
+              - Use Layer Grouping: 使用PSD/PSB文件中的图层分组信息
+              - Pivot: 轴心点位置
+              - Reslice: 从导入层重新生成Sprite,并清除对Sprite的修改,只有开启了Mosaic选项后才可用
+              - Keep Duplicate Name: 让Sprite名称保留PSD/PSB文件中的名称
+        */
+        /**
+            制作骨骼:
+               (1). 选择PSB文件,在Sprite Editor窗口中选择骨骼工具创建骨骼;注意在创建骨骼的同时可同时设定根骨骼
+               (2). 设置蒙皮和权重
+                    - 注意,设置蒙皮时，需要设置Bone Influence选项,将骨骼和对应的图片关联起来,确保每张图片和对应的骨骼对应
+                           同理,对于没有骨骼的图片,也可以添加骨骼,从而被其他骨骼控制,添加完的图片需要重新生成蒙皮与权重
+        */
+        /**
+            为PSB文件制作动画:
+               (1). 在场景中创建空节点,将PSB文件拖入该节点下,会自动创建各个部位的节点和骨骼
+               (2). PSB文件上的其他图片,像是手上的权杖,可以将场景上的节点取消预制体,将权杖节点作为的骨骼节点下的子节点
+               (3). 在Animation窗口中创建动画文件,开启录制,制作不同帧的对应骨骼位置即可
+        */
     }
 }
