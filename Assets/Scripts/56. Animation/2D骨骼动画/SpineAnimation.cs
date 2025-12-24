@@ -73,5 +73,9 @@ public class SpineAnimation : MonoBehaviour
         //      (1). 将图集的图片拼凑成完整角色,在拼凑好的角色上添加Sprite Skin脚本,点击Create Bones按钮
         //      (2). 如果某个关节是另一个关节的子物体,需要将这个关节的图片放到关节对象的子对象下
         //      (3). 在Animation窗口中创建动画文件,开启录制,制作不同帧的对应骨骼位置即可
+
+        // 6. PSD,PSB文件骨骼动画制作:PSD,PSB的两种格式是Photoshop保存图像数据的文件格式。
+        //    - PSD兼容其他的软件,PSB只能用PhotoShop打开.
+        //    - 在Unity中常使用PSB格式的文件,需要引入2D PSD Importer包
     }
 }
