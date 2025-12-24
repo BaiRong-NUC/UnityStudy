@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class TestLight : MonoBehaviour
 {
-    public new Light light;
+    public Light controlledLight;
     void Start()
     {
         #region 面板参数
@@ -49,7 +49,8 @@ public class TestLight : MonoBehaviour
         #endregion
 
         //代码控制面板参数
-        this.light.intensity = 0.5f;
+        // 设置受控光源的亮度
+        controlledLight.intensity = 0.5f;
         // ......
 
         #region 光相关面板 Window-Rendering-Light
@@ -67,5 +68,5 @@ public class TestLight : MonoBehaviour
         //      - Flare Strength: 耀斑可见性
         //      - Spot Cookie: 聚光灯剪影纹理
         #endregion
-    } 
+    }
 }
