@@ -65,5 +65,13 @@ public class SpineAnimation : MonoBehaviour
         //      (1). 将编辑好的图片拖入到场景中
         //      (2). 添加Sprite Skin脚本,点击Create Bones按钮
         //      (3). 在Animation窗口中创建动画文件,开启录制,制作不同帧的对应骨骼位置即可
+
+        // 5. 图集图片骨骼动画制作
+        //      (1). 首先需要将Sprite Mode设置为Multiple,然后点击Sprite Editor按钮,在Sprite Editor窗口中使用Slice工具将图片分割成多个小图片
+        //      (2). 对不同部位的小图片分别设置骨骼,蒙皮,权重等
+        //   - 图集动画的使用:
+        //      (1). 将图集的图片拼凑成完整角色,在拼凑好的角色上添加Sprite Skin脚本,点击Create Bones按钮
+        //      (2). 如果某个关节是另一个关节的子物体,需要将这个关节的图片放到关节对象的子对象下
+        //      (3). 在Animation窗口中创建动画文件,开启录制,制作不同帧的对应骨骼位置即可
     }
 }
