@@ -879,6 +879,9 @@
     <Reference Include="Unity.Timeline.Editor">
         <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Animation.Runtime">
+        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
@@ -896,6 +899,9 @@
     </Reference>
     <Reference Include="Unity.Timeline">
         <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Animation.Triangle.Runtime">
+        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
         <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll</HintPath>
@@ -920,6 +926,9 @@
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
         <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Animation.Editor">
+        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
         <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
@@ -948,6 +957,18 @@
     <ProjectReference Include="Unity.2D.Tilemap.Extras.csproj">
       <Project>{dd9c970d-fa8c-345e-e5f7-f9c2a7fc29e6}</Project>
       <Name>Unity.2D.Tilemap.Extras</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Animation.Samples.Dependency.csproj">
+      <Project>{3c3af220-c8d0-724b-0edb-f4f25f9ddd79}</Project>
+      <Name>Unity.2D.Animation.Samples.Dependency</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Animation.Samples.Runtime.csproj">
+      <Project>{fc15fe43-31ee-679e-8c40-7e4e619d4e35}</Project>
+      <Name>Unity.2D.Animation.Samples.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Animation.Samples.Editor.csproj">
+      <Project>{a1fbfb89-5a71-6749-f387-9e7c1decd000}</Project>
+      <Name>Unity.2D.Animation.Samples.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
