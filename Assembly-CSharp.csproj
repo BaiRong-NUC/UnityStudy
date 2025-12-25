@@ -280,6 +280,7 @@
      <Compile Include="Assets\Scripts\55.TileMap\TileMapAPI\TileMapAPI.cs" />
      <Compile Include="Assets\Scripts\55.TileMap\TileMap扩展\TilpeMapPlus.cs" />
      <Compile Include="Assets\Scripts\55.TileMap\TileMap笔刷拓展\TestBrush.cs" />
+     <Compile Include="Assets\Scripts\56. Animation\2D骨骼动画\IK反向动力学\IK.cs" />
      <Compile Include="Assets\Scripts\56. Animation\2D骨骼动画\SpineAnimation.cs" />
      <Compile Include="Assets\Scripts\56. Animation\AnimationAPI\TestAnimationAPI.cs" />
      <Compile Include="Assets\Scripts\56. Animation\Animation状态机\NewAnimation.cs" />
@@ -903,6 +904,9 @@
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
         <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="PsdPlugin">
+        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
         <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
@@ -911,6 +915,9 @@
     </Reference>
     <Reference Include="Unity.Mathematics">
         <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Psdimporter.Editor">
+        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
         <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
@@ -950,17 +957,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Unity.2D.Tilemap.Extras.Editor.csproj">
-      <Project>{9dbd635e-d57d-d527-ef89-dd0c01203d29}</Project>
-      <Name>Unity.2D.Tilemap.Extras.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Tilemap.Extras.csproj">
-      <Project>{dd9c970d-fa8c-345e-e5f7-f9c2a7fc29e6}</Project>
-      <Name>Unity.2D.Tilemap.Extras</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.2D.Animation.Samples.Dependency.csproj">
       <Project>{3c3af220-c8d0-724b-0edb-f4f25f9ddd79}</Project>
       <Name>Unity.2D.Animation.Samples.Dependency</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Tilemap.Extras.Editor.csproj">
+      <Project>{9dbd635e-d57d-d527-ef89-dd0c01203d29}</Project>
+      <Name>Unity.2D.Tilemap.Extras.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Animation.Samples.Runtime.csproj">
       <Project>{fc15fe43-31ee-679e-8c40-7e4e619d4e35}</Project>
@@ -969,6 +972,10 @@
     <ProjectReference Include="Unity.2D.Animation.Samples.Editor.csproj">
       <Project>{a1fbfb89-5a71-6749-f387-9e7c1decd000}</Project>
       <Name>Unity.2D.Animation.Samples.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Tilemap.Extras.csproj">
+      <Project>{dd9c970d-fa8c-345e-e5f7-f9c2a7fc29e6}</Project>
+      <Name>Unity.2D.Tilemap.Extras</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
