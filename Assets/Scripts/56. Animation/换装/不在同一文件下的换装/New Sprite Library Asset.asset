@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf7c34a0dc4e6348bea04faa70406ee, type: 3}
+  m_Name: New Sprite Library Asset
+  m_EditorClassIdentifier: 
+  m_Labels:
+  - m_Name: Head
+    m_Hash: 130111906
+    m_CategoryList:
+    - m_Name: Monster1
+      m_Hash: -1067522782
+      m_Sprite: {fileID: -8028072457983519655, guid: 7143997a145582641b3c31400f822959,
+        type: 3}
+    - m_Name: Monster2
+      m_Hash: 1498920088
+      m_Sprite: {fileID: 1230274047008120288, guid: a1d523901bee83f4abec536f15132e14,
+        type: 3}
+  - m_Name: Weapen
+    m_Hash: -1804580262
+    m_CategoryList:
+    - m_Name: Weapen1
+      m_Hash: 150349591
+      m_Sprite: {fileID: 1972777953806689032, guid: 7143997a145582641b3c31400f822959,
+        type: 3}
+    - m_Name: Weapen2
+      m_Hash: -1845528915
+      m_Sprite: {fileID: 141404520025932659, guid: a1d523901bee83f4abec536f15132e14,
+        type: 3}

@@ -29,7 +29,16 @@ public class TestSpriteResolver : MonoBehaviour
             (1). 获取各部位的SpriteResolver组件
             (2). 通过GetCategory()获取默认类别名,SetCategoryAndLabel()方法进行换装
         */
-
+        // 4. 不同文件下的换装
+        /**
+            (1). 保证每个部位在PS文件下的统一
+            (2). 基础部位可以选择性隐藏
+            (3). 不同文件的骨骼信息必须统一(使用Copy功能,蒙皮不需要完全相同,只要骨骼信息一致即可)
+            (4). 手动添加关键组件和数据文件
+                    - 创建SpriteLibraryAsset资源文件,将不同文件的分组数据添加进去
+                    - 为根对象添加SpriteLibrary组件,并关联上面的资源文件
+                    - 为换装部位添加SpriteResolver组件
+        */
         SpriteResolver[] resolvers = this.GetComponentsInChildren<SpriteResolver>();
         foreach (var resolver in resolvers)
         {
