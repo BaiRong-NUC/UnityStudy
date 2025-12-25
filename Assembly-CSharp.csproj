@@ -284,6 +284,7 @@
      <Compile Include="Assets\Scripts\56. Animation\2D骨骼动画\SpineAnimation.cs" />
      <Compile Include="Assets\Scripts\56. Animation\AnimationAPI\TestAnimationAPI.cs" />
      <Compile Include="Assets\Scripts\56. Animation\Animation状态机\NewAnimation.cs" />
+     <Compile Include="Assets\Scripts\56. Animation\Spine\TestSpineAPI.cs" />
      <Compile Include="Assets\Scripts\56. Animation\TestAnimation.cs" />
      <Compile Include="Assets\Scripts\56. Animation\序列帧动画\Animation2D.cs" />
      <Compile Include="Assets\Scripts\56. Animation\换装\TestSpriteResolver.cs" />
@@ -296,6 +297,7 @@
      <Compile Include="Assets\Scripts\9. Input\TestInput.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <None Include="Assets\Scripts\37. XML数据持久化\LearnAPI\Test.xml" />
+     <None Include="Assets\Spine\version.txt" />
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
      <None Include="Assets\NGUI\Examples\Models\Orc\Orc Skin.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
@@ -983,6 +985,22 @@
     <ProjectReference Include="Unity.2D.Tilemap.Extras.csproj">
       <Project>{dd9c970d-fa8c-345e-e5f7-f9c2a7fc29e6}</Project>
       <Name>Unity.2D.Tilemap.Extras</Name>
+    </ProjectReference>
+    <ProjectReference Include="spine-unity-examples.csproj">
+      <Project>{db8fa5d6-6e71-5ea3-63e7-4f684eb27a4b}</Project>
+      <Name>spine-unity-examples</Name>
+    </ProjectReference>
+    <ProjectReference Include="spine-unity.csproj">
+      <Project>{a3cb892c-bb08-610c-05d3-972adc0dd2b5}</Project>
+      <Name>spine-unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="spine-unity-examples-editor.csproj">
+      <Project>{a295cd1a-191b-ad9f-3cbf-09dfb63539a8}</Project>
+      <Name>spine-unity-examples-editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="spine-unity-editor.csproj">
+      <Project>{717ede72-b983-2160-d86a-56184e0abb9e}</Project>
+      <Name>spine-unity-editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
