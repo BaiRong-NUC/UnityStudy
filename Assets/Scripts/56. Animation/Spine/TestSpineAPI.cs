@@ -4,6 +4,7 @@ using UnityEngine;
 using Spine.Unity;
 public class TestSpineAPI : MonoBehaviour
 {
+    private SkeletonAnimation skeletonAnimation;
     void Start()
     {
         // 1. Spine是跨平台的2D骨骼动画工具,支持Unity,Cocos等引擎,在Unity中使用Spine需要导入Spine-Unity运行时包.
@@ -54,5 +55,13 @@ public class TestSpineAPI : MonoBehaviour
                 - Time Scale: 时间缩放,可以加快或减慢动画播放速度
                 - Root Motion: 是否添加根运动脚本(一般不需要)
         */
+        // 6. SkeletonAnimation脚本API:
+        this.skeletonAnimation = this.GetComponent<SkeletonAnimation>();
+        if (this.skeletonAnimation != null)
+        {
+            // 播放动画
+            this.skeletonAnimation.AnimationName = "walk";
+            this.skeletonAnimation.loop = true;
+        }
     }
 }
