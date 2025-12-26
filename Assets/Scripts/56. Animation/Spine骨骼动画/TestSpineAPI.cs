@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,4 +13,3 @@ public class TestSpineAPI : MonoBehaviour
         /**
             Spine到处的资源有三部分:
                 - .json文件保存骨骼数据
-                -
