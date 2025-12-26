@@ -972,6 +972,18 @@
       <Project>{3c3af220-c8d0-724b-0edb-f4f25f9ddd79}</Project>
       <Name>Unity.2D.Animation.Samples.Dependency</Name>
     </ProjectReference>
+    <ProjectReference Include="spine-unity-examples.csproj">
+      <Project>{db8fa5d6-6e71-5ea3-63e7-4f684eb27a4b}</Project>
+      <Name>spine-unity-examples</Name>
+    </ProjectReference>
+    <ProjectReference Include="spine-unity.csproj">
+      <Project>{a3cb892c-bb08-610c-05d3-972adc0dd2b5}</Project>
+      <Name>spine-unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="spine-unity-examples-editor.csproj">
+      <Project>{a295cd1a-191b-ad9f-3cbf-09dfb63539a8}</Project>
+      <Name>spine-unity-examples-editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.2D.Tilemap.Extras.Editor.csproj">
       <Project>{9dbd635e-d57d-d527-ef89-dd0c01203d29}</Project>
       <Name>Unity.2D.Tilemap.Extras.Editor</Name>
@@ -987,18 +999,6 @@
     <ProjectReference Include="Unity.2D.Tilemap.Extras.csproj">
       <Project>{dd9c970d-fa8c-345e-e5f7-f9c2a7fc29e6}</Project>
       <Name>Unity.2D.Tilemap.Extras</Name>
-    </ProjectReference>
-    <ProjectReference Include="spine-unity-examples.csproj">
-      <Project>{db8fa5d6-6e71-5ea3-63e7-4f684eb27a4b}</Project>
-      <Name>spine-unity-examples</Name>
-    </ProjectReference>
-    <ProjectReference Include="spine-unity.csproj">
-      <Project>{a3cb892c-bb08-610c-05d3-972adc0dd2b5}</Project>
-      <Name>spine-unity</Name>
-    </ProjectReference>
-    <ProjectReference Include="spine-unity-examples-editor.csproj">
-      <Project>{a295cd1a-191b-ad9f-3cbf-09dfb63539a8}</Project>
-      <Name>spine-unity-examples-editor</Name>
     </ProjectReference>
     <ProjectReference Include="spine-unity-editor.csproj">
       <Project>{717ede72-b983-2160-d86a-56184e0abb9e}</Project>
