@@ -885,9 +885,6 @@
     <Reference Include="Unity.Timeline.Editor">
         <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.2D.Animation.Runtime">
-        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
@@ -897,26 +894,14 @@
     <Reference Include="Unity.TextMeshPro.Editor">
         <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.2D.IK.Editor">
-        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.2D.Path.Editor">
         <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.IK.Runtime">
-        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
         <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
         <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Animation.Triangle.Runtime">
-        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="PsdPlugin">
-        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
         <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll</HintPath>
@@ -926,9 +911,6 @@
     </Reference>
     <Reference Include="Unity.Mathematics">
         <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Psdimporter.Editor">
-        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
         <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
@@ -944,9 +926,6 @@
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
         <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Animation.Editor">
-        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
         <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
@@ -966,27 +945,40 @@
     <Reference Include="UnityEditor.UI">
         <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Animation.Runtime">
+        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.IK.Editor">
+        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.IK.Runtime">
+        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Animation.Triangle.Runtime">
+        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="PsdPlugin">
+        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Psdimporter.Editor">
+        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Animation.Editor">
+        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Unity.2D.Animation.Samples.Dependency.csproj">
-      <Project>{3c3af220-c8d0-724b-0edb-f4f25f9ddd79}</Project>
-      <Name>Unity.2D.Animation.Samples.Dependency</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.2D.Tilemap.Extras.Editor.csproj">
       <Project>{9dbd635e-d57d-d527-ef89-dd0c01203d29}</Project>
       <Name>Unity.2D.Tilemap.Extras.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.2D.Animation.Samples.Runtime.csproj">
-      <Project>{fc15fe43-31ee-679e-8c40-7e4e619d4e35}</Project>
-      <Name>Unity.2D.Animation.Samples.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Animation.Samples.Editor.csproj">
-      <Project>{a1fbfb89-5a71-6749-f387-9e7c1decd000}</Project>
-      <Name>Unity.2D.Animation.Samples.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.2D.Tilemap.Extras.csproj">
       <Project>{dd9c970d-fa8c-345e-e5f7-f9c2a7fc29e6}</Project>
       <Name>Unity.2D.Tilemap.Extras</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Animation.Samples.Dependency.csproj">
+      <Project>{3c3af220-c8d0-724b-0edb-f4f25f9ddd79}</Project>
+      <Name>Unity.2D.Animation.Samples.Dependency</Name>
     </ProjectReference>
     <ProjectReference Include="spine-unity-examples.csproj">
       <Project>{db8fa5d6-6e71-5ea3-63e7-4f684eb27a4b}</Project>
@@ -999,6 +991,14 @@
     <ProjectReference Include="spine-unity-examples-editor.csproj">
       <Project>{a295cd1a-191b-ad9f-3cbf-09dfb63539a8}</Project>
       <Name>spine-unity-examples-editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Animation.Samples.Runtime.csproj">
+      <Project>{fc15fe43-31ee-679e-8c40-7e4e619d4e35}</Project>
+      <Name>Unity.2D.Animation.Samples.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Animation.Samples.Editor.csproj">
+      <Project>{a1fbfb89-5a71-6749-f387-9e7c1decd000}</Project>
+      <Name>Unity.2D.Animation.Samples.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="spine-unity-editor.csproj">
       <Project>{717ede72-b983-2160-d86a-56184e0abb9e}</Project>

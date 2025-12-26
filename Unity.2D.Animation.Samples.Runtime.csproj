@@ -598,6 +598,9 @@
     <Reference Include="Unity.2D.Animation.Runtime">
         <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.IK.Runtime">
+        <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>D:\Unity\Unity Code\UnityStudy\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
