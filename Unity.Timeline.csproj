@@ -11,10 +11,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{3AD5D737-BB46-43C5-6011-5F44AA481467}</ProjectGuid>
+    <ProjectGuid>{A5411E80-1028-4520-CDE1-C07180FAD1BF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Unity.Timeline</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -55,315 +55,77 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipItems.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipRandomItem.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UICursor.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UIEquipmentSlot.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UIItemSlot.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UIItemStorage.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UIStorageSlot.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvAttachmentPoint.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvBaseItem.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvDatabase.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvEquipment.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvGameItem.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvStat.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\Other\ChatInput.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\Other\DownloadTexture.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\Other\ExampleDragDropItem.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\Other\ExampleDragDropSurface.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\Other\LagPosition.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\Other\LagRotation.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\Other\LoadLevelOnClick.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\Other\LookAtTarget.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\Other\OpenURLOnClick.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\Other\PanWithMouse.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\Other\PerspectivePixelPerfect.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\Other\PlayIdleAnimations.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\Other\SetColorPickerColor.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\Other\Spin.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\Other\SpinWithMouse.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\Other\Tutorial5.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\Other\UISliderColors.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\Other\WindowAutoYaw.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\Other\WindowDragTilt.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\EnvelopContent.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\LanguageSelection.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\TypewriterEffect.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButton.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonActivate.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonColor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonKeys.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonMessage.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonOffset.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonRotation.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonScale.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UICenterOnChild.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UICenterOnClick.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragCamera.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragDropContainer.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragDropItem.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragDropRoot.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragObject.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragResize.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragScrollView.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDraggableCamera.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIEventTrigger.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIForwardEvents.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIGrid.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIImageButton.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIKeyBinding.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIKeyNavigation.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIPlayAnimation.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIPlaySound.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIPlayTween.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIPopupList.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIProgressBar.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UISavedOption.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIScrollBar.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIScrollView.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIShowControlScheme.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UISlider.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UISoundVolume.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UITable.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIToggle.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIToggledComponents.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIToggledObjects.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIWidgetContainer.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Interaction\UIWrapContent.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Internal\ActiveAnimation.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Internal\AnimationOrTween.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Internal\BMFont.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Internal\BMGlyph.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Internal\BMSymbol.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Internal\BetterList.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Internal\ByteReader.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Internal\EventDelegate.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Internal\Localization.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Internal\MinMaxRangeAttribute.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Internal\NGUIDebug.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Internal\NGUIMath.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Internal\NGUIText.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Internal\NGUITools.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Internal\PropertyBinding.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Internal\PropertyReference.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Internal\RealTime.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Internal\SpringPanel.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Internal\UIBasicSprite.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Internal\UIDrawCall.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Internal\UIEventListener.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Internal\UIGeometry.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Internal\UIRect.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Internal\UISnapshotPoint.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Internal\UIWidget.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Tweening\AnimatedAlpha.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Tweening\AnimatedColor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Tweening\AnimatedWidget.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Tweening\SpringPosition.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenAlpha.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenColor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenFOV.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenFill.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenHeight.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenLetters.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenOrthoSize.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenPosition.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenRotation.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenScale.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenTransform.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenVolume.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenWidth.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Tweening\UITweener.cs" />
-     <Compile Include="Assets\NGUI\Scripts\UI\NGUIAtlas.cs" />
-     <Compile Include="Assets\NGUI\Scripts\UI\NGUIFont.cs" />
-     <Compile Include="Assets\NGUI\Scripts\UI\UI2DSprite.cs" />
-     <Compile Include="Assets\NGUI\Scripts\UI\UI2DSpriteAnimation.cs" />
-     <Compile Include="Assets\NGUI\Scripts\UI\UIAnchor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\UI\UIAtlas.cs" />
-     <Compile Include="Assets\NGUI\Scripts\UI\UICamera.cs" />
-     <Compile Include="Assets\NGUI\Scripts\UI\UIColorPicker.cs" />
-     <Compile Include="Assets\NGUI\Scripts\UI\UIFont.cs" />
-     <Compile Include="Assets\NGUI\Scripts\UI\UIInput.cs" />
-     <Compile Include="Assets\NGUI\Scripts\UI\UIInputOnGUI.cs" />
-     <Compile Include="Assets\NGUI\Scripts\UI\UILabel.cs" />
-     <Compile Include="Assets\NGUI\Scripts\UI\UILabelSymbols.cs" />
-     <Compile Include="Assets\NGUI\Scripts\UI\UILocalize.cs" />
-     <Compile Include="Assets\NGUI\Scripts\UI\UIOrthoCamera.cs" />
-     <Compile Include="Assets\NGUI\Scripts\UI\UIPanel.cs" />
-     <Compile Include="Assets\NGUI\Scripts\UI\UIRoot.cs" />
-     <Compile Include="Assets\NGUI\Scripts\UI\UISprite.cs" />
-     <Compile Include="Assets\NGUI\Scripts\UI\UISpriteAnimation.cs" />
-     <Compile Include="Assets\NGUI\Scripts\UI\UISpriteCollection.cs" />
-     <Compile Include="Assets\NGUI\Scripts\UI\UISpriteData.cs" />
-     <Compile Include="Assets\NGUI\Scripts\UI\UIStretch.cs" />
-     <Compile Include="Assets\NGUI\Scripts\UI\UITextList.cs" />
-     <Compile Include="Assets\NGUI\Scripts\UI\UITexture.cs" />
-     <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
-     <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
-     <Compile Include="Assets\Samples\2D SpriteShape\3.0.18\Sprite Shape Extras\Scripts\Clipper.cs" />
-     <Compile Include="Assets\Samples\2D SpriteShape\3.0.18\Sprite Shape Extras\Scripts\ConformingSpline.cs" />
-     <Compile Include="Assets\Samples\2D SpriteShape\3.0.18\Sprite Shape Extras\Scripts\GenerateSpriteShapes.cs" />
-     <Compile Include="Assets\Samples\2D SpriteShape\3.0.18\Sprite Shape Extras\Scripts\GeometryCollider.cs" />
-     <Compile Include="Assets\Samples\2D SpriteShape\3.0.18\Sprite Shape Extras\Scripts\LegacyCollider.cs" />
-     <Compile Include="Assets\Samples\2D SpriteShape\3.0.18\Sprite Shape Extras\Scripts\SimpleDraw.cs" />
-     <Compile Include="Assets\Samples\2D SpriteShape\3.0.18\Sprite Shape Extras\Scripts\Sprinkler.cs" />
-     <Compile Include="Assets\Scripts\1. 生命周期函数\Life.cs" />
-     <Compile Include="Assets\Scripts\1. 生命周期函数\Life_.cs" />
-     <Compile Include="Assets\Scripts\10. Screen\TestScreen.cs" />
-     <Compile Include="Assets\Scripts\11. Cammer\TestCammer.cs" />
-     <Compile Include="Assets\Scripts\11. Cammer\TestCammerCode.cs" />
-     <Compile Include="Assets\Scripts\12. Light\TestLight.cs" />
-     <Compile Include="Assets\Scripts\13. 物理系统-碰撞检测\- 刚体\TestRigidbody.cs" />
-     <Compile Include="Assets\Scripts\13. 物理系统-碰撞检测\- 刚体加力\RigbodyForce.cs" />
-     <Compile Include="Assets\Scripts\13. 物理系统-碰撞检测\- 碰撞回调\TestColliderCallBack.cs" />
-     <Compile Include="Assets\Scripts\14. 音效系统\AudioApi.cs" />
-     <Compile Include="Assets\Scripts\14. 音效系统\MicrophoneApi.cs" />
-     <Compile Include="Assets\Scripts\15. PlayerPrefs数据持久化\LearnApi\PlayerPrefsApi.cs" />
-     <Compile Include="Assets\Scripts\15. PlayerPrefs数据持久化\LearnApi\ReflectApi.cs" />
-     <Compile Include="Assets\Scripts\15. PlayerPrefs数据持久化\PlayerPrefsManage.cs" />
-     <Compile Include="Assets\Scripts\15. PlayerPrefs数据持久化\TestPlayerPrefsManage.cs" />
-     <Compile Include="Assets\Scripts\17. GUI基础控件\GUIBasicControls.cs" />
-     <Compile Include="Assets\Scripts\18. GUI复合控件\GUICompositeControls.cs" />
-     <Compile Include="Assets\Scripts\19. GUI自定义样式\Style.cs" />
-     <Compile Include="Assets\Scripts\2. Inspector窗口可编辑界面\Edit.cs" />
-     <Compile Include="Assets\Scripts\20. GUILayout自动布局\TestGUILayout.cs" />
-     <Compile Include="Assets\Scripts\21. GUI适配分辨率封装\MyGUI\Base\GUIBase.cs" />
-     <Compile Include="Assets\Scripts\21. GUI适配分辨率封装\MyGUI\Base\GUIPosition.cs" />
-     <Compile Include="Assets\Scripts\21. GUI适配分辨率封装\MyGUI\Base\GUIRoot.cs" />
-     <Compile Include="Assets\Scripts\21. GUI适配分辨率封装\MyGUI\GUIButton.cs" />
-     <Compile Include="Assets\Scripts\21. GUI适配分辨率封装\MyGUI\GUIInput.cs" />
-     <Compile Include="Assets\Scripts\21. GUI适配分辨率封装\MyGUI\GUILabel.cs" />
-     <Compile Include="Assets\Scripts\21. GUI适配分辨率封装\MyGUI\GUIOneToggle.cs" />
-     <Compile Include="Assets\Scripts\21. GUI适配分辨率封装\MyGUI\GUISlider.cs" />
-     <Compile Include="Assets\Scripts\21. GUI适配分辨率封装\MyGUI\GUITexture.cs" />
-     <Compile Include="Assets\Scripts\21. GUI适配分辨率封装\MyGUI\GUIToggle.cs" />
-     <Compile Include="Assets\Scripts\23. Unity鼠标样式\MouseStyle.cs" />
-     <Compile Include="Assets\Scripts\24. Unity随机数与Unity委托\RandomNumber.cs" />
-     <Compile Include="Assets\Scripts\25. UnityMathf\MoveSin.cs" />
-     <Compile Include="Assets\Scripts\25. UnityMathf\TestMathf.cs" />
-     <Compile Include="Assets\Scripts\26. Unity坐标系\UnityCoordinates.cs" />
-     <Compile Include="Assets\Scripts\27. Unity向量\AdjustForward.cs" />
-     <Compile Include="Assets\Scripts\27. Unity向量\UnityVector.cs" />
-     <Compile Include="Assets\Scripts\27. Unity向量\Vector3Lerp.cs" />
-     <Compile Include="Assets\Scripts\28. Unity四元数\TestQuaternions.cs" />
-     <Compile Include="Assets\Scripts\28. Unity四元数\TestQuaternionsLerp.cs" />
-     <Compile Include="Assets\Scripts\29. Unity四元数应用\AirPlane\AirPlane.cs" />
-     <Compile Include="Assets\Scripts\29. Unity四元数应用\AirPlane\Bullet.cs" />
-     <Compile Include="Assets\Scripts\29. Unity四元数应用\CammerMove\CammerMove.cs" />
-     <Compile Include="Assets\Scripts\3. MonoBehavior\TestMonoBehavior.cs" />
-     <Compile Include="Assets\Scripts\30. Unity延时函数\UnityInvoke.cs" />
-     <Compile Include="Assets\Scripts\31. Unity协程\LearnThread.cs" />
-     <Compile Include="Assets\Scripts\31. Unity协程\MyStartCoroutine\CoroutineManage.cs" />
-     <Compile Include="Assets\Scripts\31. Unity协程\MyStartCoroutine\MyStartCoroutine.cs" />
-     <Compile Include="Assets\Scripts\31. Unity协程\UnityThread.cs" />
-     <Compile Include="Assets\Scripts\32. Unity特殊文件夹\ResourcesAPI.cs" />
-     <Compile Include="Assets\Scripts\32. Unity特殊文件夹\UnityFolder.cs" />
-     <Compile Include="Assets\Scripts\33. Unity场景异步加载\LoadScenes.cs" />
-     <Compile Include="Assets\Scripts\34. LineRenderer\UnityLineRender.cs" />
-     <Compile Include="Assets\Scripts\35. Unity范围检测\RangeRigbody.cs" />
-     <Compile Include="Assets\Scripts\36. Unity射线检测\UnityRay.cs" />
-     <Compile Include="Assets\Scripts\37. XML数据持久化\LearnAPI\IxmlserializableAPI.cs" />
-     <Compile Include="Assets\Scripts\37. XML数据持久化\LearnAPI\LoadXML.cs" />
-     <Compile Include="Assets\Scripts\37. XML数据持久化\LearnAPI\XMLSerialization.cs" />
-     <Compile Include="Assets\Scripts\37. XML数据持久化\TestXmlDataManage.cs" />
-     <Compile Include="Assets\Scripts\37. XML数据持久化\XmlDataManage.cs" />
-     <Compile Include="Assets\Scripts\4. GameObject\TestGameObject.cs" />
-     <Compile Include="Assets\Scripts\41. NGUI基础控件\Label\TestLabel.cs" />
-     <Compile Include="Assets\Scripts\41. NGUI基础控件\Sprite\TestSprite.cs" />
-     <Compile Include="Assets\Scripts\41. NGUI基础控件\Texture\TestTexture.cs" />
-     <Compile Include="Assets\Scripts\42. NGUI组合控件\NGUI Button\TestNGUIButton.cs" />
-     <Compile Include="Assets\Scripts\42. NGUI组合控件\NGUI Input\TestNGUIInput.cs" />
-     <Compile Include="Assets\Scripts\42. NGUI组合控件\NGUI PopupList\TestPopupList.cs" />
-     <Compile Include="Assets\Scripts\42. NGUI组合控件\NGUI ScrollBar&amp;ProgressBar\TestNGUIBar.cs" />
-     <Compile Include="Assets\Scripts\42. NGUI组合控件\NGUI ScrollView\BagPanel.cs" />
-     <Compile Include="Assets\Scripts\42. NGUI组合控件\NGUI ScrollView\TestNGUIScrollView.cs" />
-     <Compile Include="Assets\Scripts\42. NGUI组合控件\NGUI Slider\TestNGUISlider.cs" />
-     <Compile Include="Assets\Scripts\42. NGUI组合控件\NGUI Toggle\TestNGUIToggle.cs" />
-     <Compile Include="Assets\Scripts\43. NGUI Anchor\TestNGUIAnchor.cs" />
-     <Compile Include="Assets\Scripts\44. NGUI EventListener&amp;EventTrigger\EventPanel.cs" />
-     <Compile Include="Assets\Scripts\44. NGUI EventListener&amp;EventTrigger\TestEvent.cs" />
-     <Compile Include="Assets\Scripts\47. NGUI缓动\NGUITween.cs" />
-     <Compile Include="Assets\Scripts\49. NGUI 其他知识点\NGUIExtension.cs" />
-     <Compile Include="Assets\Scripts\5. Time\TestTime.cs" />
-     <Compile Include="Assets\Scripts\51. Unity 图片资源导入\ImportSprite.cs" />
-     <Compile Include="Assets\Scripts\52. Unity Sprite\SpriteRender.cs" />
-     <Compile Include="Assets\Scripts\52. Unity Sprite\TestSpriteAtlas.cs" />
-     <Compile Include="Assets\Scripts\52. Unity Sprite\TestSpriteMask.cs" />
-     <Compile Include="Assets\Scripts\53. 2D物理\刚体\Test2DColiderAPI.cs" />
-     <Compile Include="Assets\Scripts\53. 2D物理\刚体\Test2DPhysicalAPI.cs" />
-     <Compile Include="Assets\Scripts\53. 2D物理\效应器\TestEffectorAPI.cs" />
-     <Compile Include="Assets\Scripts\54.SpriteShape\TestSpriteShape.cs" />
-     <Compile Include="Assets\Scripts\55.TileMap\Exercise\IsometricExercise\IsometricExercise.cs" />
-     <Compile Include="Assets\Scripts\55.TileMap\Exercise\PlayerMove\PlayerMove.cs" />
-     <Compile Include="Assets\Scripts\55.TileMap\TestTileMap.cs" />
-     <Compile Include="Assets\Scripts\55.TileMap\TileMapAPI\TileMapAPI.cs" />
-     <Compile Include="Assets\Scripts\55.TileMap\TileMap扩展\TilpeMapPlus.cs" />
-     <Compile Include="Assets\Scripts\55.TileMap\TileMap笔刷拓展\TestBrush.cs" />
-     <Compile Include="Assets\Scripts\56. Animation\2D骨骼动画\IK反向动力学\IK.cs" />
-     <Compile Include="Assets\Scripts\56. Animation\2D骨骼动画\SpineAnimation.cs" />
-     <Compile Include="Assets\Scripts\56. Animation\AnimationAPI\TestAnimationAPI.cs" />
-     <Compile Include="Assets\Scripts\56. Animation\Animation状态机\NewAnimation.cs" />
-     <Compile Include="Assets\Scripts\56. Animation\Spine骨骼动画\TestSpineAPI.cs" />
-     <Compile Include="Assets\Scripts\56. Animation\TestAnimation.cs" />
-     <Compile Include="Assets\Scripts\56. Animation\序列帧动画\Animation2D.cs" />
-     <Compile Include="Assets\Scripts\56. Animation\换装\TestSpriteResolver.cs" />
-     <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Angle.cs" />
-     <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Scale.cs" />
-     <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Vector.cs" />
-     <Compile Include="Assets\Scripts\7. 父子关系\Fahter.cs" />
-     <Compile Include="Assets\Scripts\7. 父子关系\Tool.cs" />
-     <Compile Include="Assets\Scripts\8. 坐标转化\TransPos.cs" />
-     <Compile Include="Assets\Scripts\9. Input\TestInput.cs" />
-     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
-     <None Include="Assets\Scripts\37. XML数据持久化\LearnAPI\Test.xml" />
-     <None Include="Assets\Spine\version.txt" />
-     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
-     <None Include="Assets\NGUI\Examples\Models\Orc\Orc Skin.shader" />
-     <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
-     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 3.shader" />
-     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
-     <None Include="Assets\Resources\Texts\Test.txt" />
-     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 3.shader" />
-     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (TextureClip).shader" />
-     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked.shader" />
-     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 1.shader" />
-     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (TextureClip).shader" />
-     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed.shader" />
-     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth.shader" />
-     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 2.shader" />
-     <None Include="Assets\NGUI\ReadMe - 2020.2.1.txt" />
-     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 2.shader" />
-     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 2.shader" />
-     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
-     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 2.shader" />
-     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 3.shader" />
-     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 2.shader" />
-     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text.shader" />
-     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored (TextureClip).shader" />
-     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
-     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 1.shader" />
-     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
-     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
-     <None Include="Assets\NGUI\Examples\Shaders\Refractive.shader" />
-     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Masked Colored.shader" />
-     <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
-     <None Include="Assets\Resources\XML\Test.xml" />
-     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo14.txt" />
-     <None Include="Assets\Resources\BMFont.fnt" />
-     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 1.shader" />
-     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 3.shader" />
-     <None Include="Assets\Resources\Localization.txt" />
-     <None Include="Assets\Scripts\56. Animation\Spine骨骼动画\Boy\spineboy-pro.atlas.txt" />
-     <None Include="Assets\StreamingAssets\Test.xml" />
-     <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
-     <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
-     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored.shader" />
-     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 3.shader" />
-     <None Include="Assets\Scripts\56. Animation\Spine骨骼动画\Girl\Doi.atlas.txt" />
-     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text (TextureClip).shader" />
-     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Additive Colored.shader" />
-     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 1.shader" />
-     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 1.shader" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Activation\ActivationMixerPlayable.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Activation\ActivationPlayableAsset.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Activation\ActivationTrack.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Animation\AnimationOutputWeightProcessor.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Animation\AnimationPlayableAsset.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Animation\AnimationPreviewUpdateCallback.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Animation\AnimationTrack.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Animation\ICurvesOwner.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\AssetUpgrade\AnimationPlayableAssetUpgrade.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\AssetUpgrade\AnimationTrackUpgrade.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\AssetUpgrade\ClipUpgrade.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\AssetUpgrade\TimelineUpgrade.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\AssetUpgrade\TrackUpgrade.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Attributes\TrackColorAttribute.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Audio\AudioClipProperties.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Audio\AudioMixerProperties.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Audio\AudioPlayableAsset.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Audio\AudioTrack.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\ClipCaps.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Control\ControlPlayableAsset.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Control\ControlTrack.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\DiscreteTime.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Evaluation\InfiniteRuntimeClip.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Evaluation\IntervalTree.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Evaluation\RuntimeClip.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Evaluation\RuntimeClipBase.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Evaluation\RuntimeElement.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Evaluation\ScheduleRuntimeClip.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Events\IMarker.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Events\INotificationOptionProvider.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Events\Marker.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Events\MarkerList.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Events\MarkerTrack.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Events\SignalTrack.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Events\Signals\CustomSignalEventDrawer.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Events\Signals\SignalAsset.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Events\Signals\SignalEmitter.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Events\Signals\SignalReceiver.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Extensions\TrackExtensions.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\GroupTrack.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\ILayerable.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Playables\ActivationControlPlayable.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Playables\BasicScriptPlayable.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Playables\DirectorControlPlayable.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Playables\ITimeControl.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Playables\NotificationFlags.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Playables\ParticleControlPlayable.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Playables\PrefabControlPlayable.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Playables\TimeControlPlayable.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Playables\TimeNotificationBehaviour.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Properties\AssemblyInfo.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Scripting\PlayableTrack.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Timeline.deprecated.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\TimelineAsset.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\TimelineAsset_CreateRemove.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\TimelineAttributes.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\TimelineClip.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\TimelinePlayable.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\TrackAsset.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Utilities\AnimationPreviewUtilities.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Utilities\AnimatorBindingCache.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Utilities\Extrapolation.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Utilities\HashUtility.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Utilities\IPropertyCollector.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Utilities\IPropertyPreview.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Utilities\NotificationUtilities.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Utilities\TimeUtility.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Utilities\TimelineCreateUtilities.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Utilities\TimelineUndo.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Utilities\WeightUtility.cs" />
+     <None Include="Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Unity.Timeline.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>D:/Unity/Unity Editor/2019.4.17f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -546,6 +308,21 @@
  </Reference>
  <Reference Include="UnityEditor">
  <HintPath>D:/Unity/Unity Editor/2019.4.17f1c1/Editor/Data/Managed/UnityEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.VR">
+ <HintPath>D:/Unity/Unity Editor/2019.4.17f1c1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>D:/Unity/Unity Editor/2019.4.17f1c1/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+ <HintPath>D:/Unity/Unity Editor/2019.4.17f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>D:/Unity/Unity Editor/2019.4.17f1c1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions">
+ <HintPath>D:/Unity/Unity Editor/2019.4.17f1c1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
  <HintPath>D:/Unity/Unity Code/UnityStudy/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
@@ -903,153 +680,13 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{AA29F0E3-0E63-D503-1239-1B8EBD6A4728}</Project>
-      <Name>Unity.Timeline.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Animation.Runtime.csproj">
-      <Project>{326D1CCA-FB50-9598-E741-941A90BEB579}</Project>
-      <Name>Unity.2D.Animation.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{2DBC4742-4A80-354A-9D92-EF6B1B677355}</Project>
-      <Name>Unity.VSCode.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Animation.Samples.Dependency.csproj">
-      <Project>{20F23A3C-D0C8-4B72-0EDB-F4F25F9DDD79}</Project>
-      <Name>Unity.2D.Animation.Samples.Dependency</Name>
-    </ProjectReference>
-    <ProjectReference Include="spine-unity-examples.csproj">
-      <Project>{D6A58FDB-716E-A35E-63E7-4F684EB27A4B}</Project>
-      <Name>spine-unity-examples</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.SpriteShape.Editor.csproj">
-      <Project>{7C3490A7-18CB-CC6A-90CF-169DF9EB0B32}</Project>
-      <Name>Unity.2D.SpriteShape.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="spine-unity.csproj">
-      <Project>{2C89CBA3-08BB-0C61-05D3-972ADC0DD2B5}</Project>
-      <Name>spine-unity</Name>
-    </ProjectReference>
-    <ProjectReference Include="spine-unity-examples-editor.csproj">
-      <Project>{1ACD95A2-1B19-9FAD-3CBF-09DFB63539A8}</Project>
-      <Name>spine-unity-examples-editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Tilemap.Extras.Editor.csproj">
-      <Project>{5E63BD9D-7DD5-27D5-EF89-DD0C01203D29}</Project>
-      <Name>Unity.2D.Tilemap.Extras.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{17296A3A-38A1-E316-47CE-61824614DAFD}</Project>
-      <Name>Unity.TextMeshPro.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.IK.Editor.csproj">
-      <Project>{B1A4EFDA-EF58-F7EF-E4F8-1B058BE1BD49}</Project>
-      <Name>Unity.2D.IK.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Path.Editor.csproj">
-      <Project>{2ABCFEE0-2E28-DD4D-8073-2257465429AD}</Project>
-      <Name>Unity.2D.Path.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.IK.Runtime.csproj">
-      <Project>{037C5131-19BA-8CC8-25BE-CEF54A74E5CF}</Project>
-      <Name>Unity.2D.IK.Runtime</Name>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{13A74752-A1ED-59FE-62AB-D57B27713115}</Project>
+      <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{01888144-24C7-EF8D-DDCC-2F69F07179F5}</Project>
       <Name>UnityEngine.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{A5411E80-1028-4520-CDE1-C07180FAD1BF}</Project>
-      <Name>Unity.Timeline</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Animation.Samples.Runtime.csproj">
-      <Project>{43FE15FC-EE31-9E67-8C40-7E4E619D4E35}</Project>
-      <Name>Unity.2D.Animation.Samples.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Animation.Triangle.Runtime.csproj">
-      <Project>{C3FAB29D-5BF8-BC34-60CB-67F1F47A1DE4}</Project>
-      <Name>Unity.2D.Animation.Triangle.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="PsdPlugin.csproj">
-      <Project>{43D2E2F2-3F7C-C5F2-4B8E-A976263338B4}</Project>
-      <Name>PsdPlugin</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Animation.Samples.Editor.csproj">
-      <Project>{89FBFBA1-715A-4967-F387-9E7C1DECD000}</Project>
-      <Name>Unity.2D.Animation.Samples.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.CollabProxy.Editor.csproj">
-      <Project>{F85BEE65-96BB-455D-A6B1-2AE6236F351D}</Project>
-      <Name>Unity.CollabProxy.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{A4FC764E-6C39-00DC-2A73-892AFE924A8B}</Project>
-      <Name>Unity.Rider.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Mathematics.csproj">
-      <Project>{9D91C28E-E091-3E28-BF88-28E729B7FE3D}</Project>
-      <Name>Unity.Mathematics</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Psdimporter.Editor.csproj">
-      <Project>{F3AAA95A-46D5-B77A-42BE-11C1FD4588A9}</Project>
-      <Name>Unity.2D.Psdimporter.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.InternalAPIEngineBridge.001.csproj">
-      <Project>{061270B3-F96F-9C5C-4343-95D5C721DE04}</Project>
-      <Name>Unity.InternalAPIEngineBridge.001</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
-      <Project>{2ABF18FF-D922-2679-0230-6C25C84100FB}</Project>
-      <Name>Unity.2D.Sprite.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Common.Runtime.csproj">
-      <Project>{E1C4FC3F-02A1-BDE1-4B42-14BED774A759}</Project>
-      <Name>Unity.2D.Common.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Tilemap.Editor.csproj">
-      <Project>{FDDE7361-2E44-F500-3B7F-985122F7AE34}</Project>
-      <Name>Unity.2D.Tilemap.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.SpriteShape.Runtime.csproj">
-      <Project>{4DBB3D16-1CDB-5F16-1FE5-B60B269B18D3}</Project>
-      <Name>Unity.2D.SpriteShape.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Animation.Editor.csproj">
-      <Project>{BE2679FD-849C-8BC8-B646-48B7A317CD7E}</Project>
-      <Name>Unity.2D.Animation.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Tilemap.Extras.csproj">
-      <Project>{0D979CDD-8CFA-5E34-E5F7-F9C2A7FC29E6}</Project>
-      <Name>Unity.2D.Tilemap.Extras</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
-      <Project>{CFE8075B-D301-BB68-C32D-6592088A08CF}</Project>
-      <Name>Unity.VisualStudio.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Mathematics.Editor.csproj">
-      <Project>{6A27E045-21FB-9019-0432-26E22642AB3A}</Project>
-      <Name>Unity.Mathematics.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="spine-unity-editor.csproj">
-      <Project>{72DE7E71-83B9-6021-D86A-56184E0ABB9E}</Project>
-      <Name>spine-unity-editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{C15AF1E8-68A1-2A1E-80D2-8E60BD939F93}</Project>
-      <Name>Unity.TextMeshPro</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Common.Editor.csproj">
-      <Project>{1184B0C5-ACEF-2798-7BC3-4B34F7ACA812}</Project>
-      <Name>Unity.2D.Common.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.InternalAPIEditorBridge.001.csproj">
-      <Project>{AA63602A-36C9-2662-F3E0-922E30824F53}</Project>
-      <Name>Unity.InternalAPIEditorBridge.001</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{13A74752-A1ED-59FE-62AB-D57B27713115}</Project>
-      <Name>UnityEditor.UI</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

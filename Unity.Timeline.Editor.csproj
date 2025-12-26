@@ -11,10 +11,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{B34427BE-378E-2EC1-6075-FF059C8C22C5}</ProjectGuid>
+    <ProjectGuid>{AA29F0E3-0E63-D503-1239-1B8EBD6A4728}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+    <AssemblyName>Unity.Timeline.Editor</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -55,96 +55,243 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Editor\InvDatabaseInspector.cs" />
-     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Editor\InvFindItem.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\ActiveAnimationEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\BMFontReader.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\ComponentSelector.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\EventDelegateDrawer.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\EventDelegateEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\FreeType.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\MinMaxRangeAttributeDrawer.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\NGUIAtlasInspector.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\NGUIContextMenu.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\NGUIEditorExtensions.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\NGUIEditorTools.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\NGUIFontInspector.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\NGUIHandles.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\NGUIHelp.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\NGUIJson.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\NGUIMenu.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\NGUISelectionTools.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\NGUISettings.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\NGUISnap.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\NGUITransformInspector.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\PropertyBindingEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\PropertyReferenceDrawer.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\SpriteSelector.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\TweenAlphaEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\TweenColorEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\TweenFOVEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\TweenHeightEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\TweenOrthoSizeEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\TweenPositionEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\TweenRotationEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\TweenScaleEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\TweenTransformEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\TweenVolumeEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\TweenWidthEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\TypewriterEffectEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UI2DSpriteEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIAnchorEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIAtlasInspector.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIAtlasMaker.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIBasicSpriteEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIButtonColorEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIButtonEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIButtonKeysEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIButtonMessageEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UICameraEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UICameraTool.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIColorPickerEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UICreateNewUIWizard.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UICreateWidgetWizard.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIDragObjectEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIDrawCallInspector.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIDrawCallViewer.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIEventTriggerEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIFontInspector.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIFontMaker.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIForwardEventsEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIGridEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIImageButtonInspector.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIInputEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIKeyNavigationEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UILabelInspector.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UILocalizeEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIPanelInspector.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIPanelTool.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIPlayAnimationEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIPlayTweenEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIPopupListInspector.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIPrefabTool.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIProgressBarEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIRectEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIRootEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIScrollBarEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIScrollViewEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UISliderEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UISnapshotPointEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UISpriteAnimationInspector.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UISpriteCollectionEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UISpriteInspector.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIStretchEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UITableEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UITextureInspector.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UITexturePacker.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIToggleInspector.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UITweenerEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIWidgetContainerEditor.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIWidgetInspector.cs" />
-     <Compile Include="Assets\NGUI\Scripts\Editor\UIWrapContentEditor.cs" />
-     <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Actions\ClipsActions.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Actions\ItemAction.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Actions\MarkerActions.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Actions\Menus\MenuItemActionBase.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Actions\Menus\TimelineContextMenu.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Actions\TimelineActions.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Actions\TrackActions.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Activation\ActivationTrackEditor.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Activation\ActivationTrackInspector.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Analytics\TimelineAnalytics.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Animation\AnimationClipActions.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Animation\AnimationClipCurveCache.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Animation\AnimationOffsetMenu.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Animation\AnimationPlayableAssetEditor.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Animation\AnimationTrackActions.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Animation\BindingSelector.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Animation\BindingTreeViewDataSource.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Animation\BindingTreeViewDataSourceGUI.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Animation\ClipCurveEditor.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Animation\CurveDataSource.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Animation\CurvesProxy.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Animation\TimelineAnimationUtilities.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Attributes\ActiveInModeAttribute.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Attributes\MenuEntryAttribute.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Attributes\ShortcutAttribute.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Audio\AudioClipPropertiesDrawer.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Audio\AudioPlayableAssetEditor.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Audio\AudioPlayableAssetInspector.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Audio\AudioTrackInspector.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\ControlTrack\ControlPlayableAssetEditor.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\CurveEditUtility.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\CustomEditors\ClipEditor.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\CustomEditors\CustomTimelineEditorCache.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\CustomEditors\MarkerEditor.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\CustomEditors\MarkerTrackEditor.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\CustomEditors\TrackEditor.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\DirectorNamedColor.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\DirectorStyles.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Extensions\AnimatedParameterExtensions.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Extensions\AnimationTrackExtensions.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Extensions\TrackExtensions.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Items\ClipItem.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Items\ITimelineItem.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Items\ItemsGroup.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Items\ItemsPerTrack.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Items\ItemsUtils.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Items\MarkerItem.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\AddDelete\AddDeleteItemModeMix.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\AddDelete\AddDeleteItemModeReplace.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\AddDelete\AddDeleteItemModeRipple.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\AddDelete\IAddDeleteItemMode.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\Cursors\TimelineCursors.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\EditMode.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\EditModeInputHandler.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\Move\IMoveItemMode.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\Move\MoveItemHandler.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\Move\MoveItemModeMix.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\Move\MoveItemModeReplace.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\Move\MoveItemModeRipple.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\Move\MovingItems.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\Sequence\EaseClip.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\Sequence\Jog.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\Sequence\MarkerHeaderContextMenu.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\Sequence\RectangleSelect.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\Sequence\RectangleTool.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\Sequence\RectangleZoom.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\Sequence\SelectAndMoveItem.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\Sequence\TrackZoom.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\Sequence\TrimClip.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\TimeAreaAutoPanner.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\TimeIndicator.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\TimelineClipGroup.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\Trim\ITrimItemMode.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\Trim\TrimItemModeMix.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\Trim\TrimItemModeReplace.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\Trim\TrimItemModeRipple.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\Utils\EditModeGUIUtils.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\Utils\EditModeMixUtils.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\Utils\EditModeReplaceUtils.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\Utils\EditModeRippleUtils.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\Utils\EditModeUtils.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\Utils\ManipulatorsUtils.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Manipulators\Utils\PlacementValidity.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\MenuOrder.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Playables\ControlPlayableInspector.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Properties\AssemblyInfo.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Recording\AnimationTrackRecorder.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Recording\TimelineRecording.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Recording\TimelineRecordingContextualResponder.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Recording\TimelineRecording_Monobehaviour.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Recording\TimelineRecording_PlayableAsset.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Recording\TrackAssetRecordingExtensions.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Shortcuts.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Signals\SignalAssetInspector.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Signals\SignalEmitterEditor.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Signals\SignalEmitterInspector.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Signals\SignalEventDrawer.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Signals\SignalManager.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Signals\SignalReceiverHeader.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Signals\SignalReceiverInspector.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Signals\SignalUtility.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Signals\Styles.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Signals\TreeView\SignalListFactory.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Signals\TreeView\SignalReceiverItem.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Signals\TreeView\SignalReceiverTreeView.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\State\ISequenceState.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\State\SequenceHierarchy.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\State\SequencePath.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\State\SequenceState.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\State\WindowState.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\TimelineEditor.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\TimelineHelpers.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\TimelineSelection.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\TimelineUtility.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Tooltip.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Trackhead.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\UnityEditorInternals.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Utilities\AnimatedParameterCache.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Utilities\AnimatedParameterUtility.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Utilities\BindingUtility.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Utilities\BreadcrumbDrawer.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Utilities\ClipModifier.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Utilities\Clipboard.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Utilities\ControlPlayableUtility.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Utilities\CustomTrackDrawerAttribute.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Utilities\DisplayNameHelper.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Utilities\GUIColorOverride.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Utilities\GUIGroupScope.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Utilities\GUIMixedValueScope.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Utilities\GUIViewportScope.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Utilities\Graphics.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Utilities\KeyTraverser.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Utilities\MarkerModifier.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Utilities\ObjectExtension.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Utilities\ObjectReferenceField.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Utilities\PropertyCollector.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Utilities\Range.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Utilities\SequenceSelectorNameFormater.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Utilities\SpacePartitioner.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Utilities\StyleManager.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Utilities\StyleNormalColorOverride.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Utilities\TimeReferenceUtility.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Utilities\TimelineKeyboardNavigation.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Utilities\TrackModifier.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Utilities\TrackResourceCache.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Utilities\TypeUtility.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Window\Modes\TimeReferenceMode.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Window\Modes\TimelineActiveMode.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Window\Modes\TimelineAssetEditionMode.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Window\Modes\TimelineDisabledMode.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Window\Modes\TimelineInactiveMode.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Window\Modes\TimelineMode.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Window\Modes\TimelineReadOnlyMode.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Window\PlaybackScroller.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Window\TimelineMarkerHeaderGUI.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Window\TimelineWindow.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Window\TimelineWindowTimeControl.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Window\TimelineWindow_ActiveTimeline.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Window\TimelineWindow_Breadcrumbs.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Window\TimelineWindow_Duration.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Window\TimelineWindow_EditorCallbacks.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Window\TimelineWindow_Gui.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Window\TimelineWindow_HeaderGui.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Window\TimelineWindow_Manipulators.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Window\TimelineWindow_PlayRange.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Window\TimelineWindow_PlayableLookup.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Window\TimelineWindow_PreviewPlayMode.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Window\TimelineWindow_Selection.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Window\TimelineWindow_StateChange.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Window\TimelineWindow_TimeArea.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Window\TimelineWindow_TimeCursor.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Window\TimelineWindow_TrackGui.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Window\ViewModel\ScriptableObjectViewPrefs.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Window\ViewModel\TimelineAssetViewModel.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Window\ViewModel\TimelineWindowViewPrefs.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Window\WindowConstants.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\inspectors\AnimationPlayableAssetInspector.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\inspectors\AnimationTrackInspector.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\inspectors\BasicAssetInspector.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\inspectors\BuiltInCurvePresets.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\inspectors\ClipInspector\ClipInspector.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\inspectors\ClipInspector\ClipInspectorCurveEditor.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\inspectors\ClipInspector\ClipInspectorSelectionInfo.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\inspectors\CurvesOwner\CurvesOwnerInspectorHelper.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\inspectors\CurvesOwner\ICurvesOwnerInspectorWrapper.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\inspectors\DirectorNamedColorInspector.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\inspectors\EditorClip.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\inspectors\EditorClipFactory.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\inspectors\GroupTrackInspector.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\inspectors\MarkerInspector.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\inspectors\TimeFieldDrawer.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\inspectors\TimelineAssetInspector.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\inspectors\TimelineInspectorUtility.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\inspectors\TrackAssetInspector.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\AnimationTrackKeyDataSource.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\Control.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\Drawers\AnimationTrackDrawer.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\Drawers\ClipDrawer.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\Drawers\InfiniteTrackDrawer.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\Drawers\Layers\ClipsLayer.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\Drawers\Layers\ItemsLayer.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\Drawers\Layers\MarkersLayer.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\Drawers\TrackDrawer.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\Drawers\TrackItemsDrawer.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\IPropertyKeyDataSource.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\IRowGUI.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\InlineCurveEditor.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\ItemGui\ISelectable.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\ItemGui\TimelineClipGUI.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\ItemGui\TimelineItemGUI.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\ItemGui\TimelineMarkerClusterGUI.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\ItemGui\TimelineMarkerGUI.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\ManipulationsClips.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\ManipulationsTimeline.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\ManipulationsTracks.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\Manipulator.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\PickerUtils.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\Snapping\IAttractable.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\Snapping\ISnappable.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\Snapping\SnapEngine.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\TimelineClipHandle.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\TimelineClipUnion.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\TimelineDataSource.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\TimelineDragging.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\TimelineGroupGUI.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\TimelineTrackBaseGUI.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\TimelineTrackErrorGUI.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\TimelineTrackGUI.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\TimelineTreeView.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\TimelineTreeViewGUI.cs" />
+     <Compile Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\treeview\TrackPropertyCurvesDataSource.cs" />
+     <None Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\Unity.Timeline.Editor.asmdef" />
+     <None Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\StyleSheets\res\Timeline_LightSkin.txt" />
+     <None Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\StyleSheets\Extensions\dark.uss" />
+     <None Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\StyleSheets\res\Timeline_DarkSkin.txt" />
+     <None Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\StyleSheets\Extensions\light.uss" />
+     <None Include="Library\PackageCache\com.unity.timeline@1.2.17\Editor\StyleSheets\Extensions\common.uss" />
  <Reference Include="UnityEngine">
  <HintPath>D:/Unity/Unity Editor/2019.4.17f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -708,9 +855,17 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{3AD5D737-BB46-43C5-6011-5F44AA481467}</Project>
-      <Name>Assembly-CSharp</Name>
+    <ProjectReference Include="Unity.Timeline.csproj">
+      <Project>{A5411E80-1028-4520-CDE1-C07180FAD1BF}</Project>
+      <Name>Unity.Timeline</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{13A74752-A1ED-59FE-62AB-D57B27713115}</Project>
+      <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{01888144-24C7-EF8D-DDCC-2F69F07179F5}</Project>
+      <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
       <Project>{9BCE459E-7EE5-E991-DD53-2626C294DEBA}</Project>
@@ -719,154 +874,6 @@
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
       <Project>{E025EA90-C78F-9AC0-F05D-C35AFF9569C1}</Project>
       <Name>UnityEngine.TestRunner</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{AA29F0E3-0E63-D503-1239-1B8EBD6A4728}</Project>
-      <Name>Unity.Timeline.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Animation.Runtime.csproj">
-      <Project>{326D1CCA-FB50-9598-E741-941A90BEB579}</Project>
-      <Name>Unity.2D.Animation.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{2DBC4742-4A80-354A-9D92-EF6B1B677355}</Project>
-      <Name>Unity.VSCode.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Animation.Samples.Dependency.csproj">
-      <Project>{20F23A3C-D0C8-4B72-0EDB-F4F25F9DDD79}</Project>
-      <Name>Unity.2D.Animation.Samples.Dependency</Name>
-    </ProjectReference>
-    <ProjectReference Include="spine-unity-examples.csproj">
-      <Project>{D6A58FDB-716E-A35E-63E7-4F684EB27A4B}</Project>
-      <Name>spine-unity-examples</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.SpriteShape.Editor.csproj">
-      <Project>{7C3490A7-18CB-CC6A-90CF-169DF9EB0B32}</Project>
-      <Name>Unity.2D.SpriteShape.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="spine-unity.csproj">
-      <Project>{2C89CBA3-08BB-0C61-05D3-972ADC0DD2B5}</Project>
-      <Name>spine-unity</Name>
-    </ProjectReference>
-    <ProjectReference Include="spine-unity-examples-editor.csproj">
-      <Project>{1ACD95A2-1B19-9FAD-3CBF-09DFB63539A8}</Project>
-      <Name>spine-unity-examples-editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Tilemap.Extras.Editor.csproj">
-      <Project>{5E63BD9D-7DD5-27D5-EF89-DD0C01203D29}</Project>
-      <Name>Unity.2D.Tilemap.Extras.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{17296A3A-38A1-E316-47CE-61824614DAFD}</Project>
-      <Name>Unity.TextMeshPro.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.IK.Editor.csproj">
-      <Project>{B1A4EFDA-EF58-F7EF-E4F8-1B058BE1BD49}</Project>
-      <Name>Unity.2D.IK.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Path.Editor.csproj">
-      <Project>{2ABCFEE0-2E28-DD4D-8073-2257465429AD}</Project>
-      <Name>Unity.2D.Path.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.IK.Runtime.csproj">
-      <Project>{037C5131-19BA-8CC8-25BE-CEF54A74E5CF}</Project>
-      <Name>Unity.2D.IK.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{01888144-24C7-EF8D-DDCC-2F69F07179F5}</Project>
-      <Name>UnityEngine.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{A5411E80-1028-4520-CDE1-C07180FAD1BF}</Project>
-      <Name>Unity.Timeline</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Animation.Samples.Runtime.csproj">
-      <Project>{43FE15FC-EE31-9E67-8C40-7E4E619D4E35}</Project>
-      <Name>Unity.2D.Animation.Samples.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Animation.Triangle.Runtime.csproj">
-      <Project>{C3FAB29D-5BF8-BC34-60CB-67F1F47A1DE4}</Project>
-      <Name>Unity.2D.Animation.Triangle.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="PsdPlugin.csproj">
-      <Project>{43D2E2F2-3F7C-C5F2-4B8E-A976263338B4}</Project>
-      <Name>PsdPlugin</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Animation.Samples.Editor.csproj">
-      <Project>{89FBFBA1-715A-4967-F387-9E7C1DECD000}</Project>
-      <Name>Unity.2D.Animation.Samples.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.CollabProxy.Editor.csproj">
-      <Project>{F85BEE65-96BB-455D-A6B1-2AE6236F351D}</Project>
-      <Name>Unity.CollabProxy.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{A4FC764E-6C39-00DC-2A73-892AFE924A8B}</Project>
-      <Name>Unity.Rider.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Mathematics.csproj">
-      <Project>{9D91C28E-E091-3E28-BF88-28E729B7FE3D}</Project>
-      <Name>Unity.Mathematics</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Psdimporter.Editor.csproj">
-      <Project>{F3AAA95A-46D5-B77A-42BE-11C1FD4588A9}</Project>
-      <Name>Unity.2D.Psdimporter.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.InternalAPIEngineBridge.001.csproj">
-      <Project>{061270B3-F96F-9C5C-4343-95D5C721DE04}</Project>
-      <Name>Unity.InternalAPIEngineBridge.001</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
-      <Project>{2ABF18FF-D922-2679-0230-6C25C84100FB}</Project>
-      <Name>Unity.2D.Sprite.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Common.Runtime.csproj">
-      <Project>{E1C4FC3F-02A1-BDE1-4B42-14BED774A759}</Project>
-      <Name>Unity.2D.Common.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Tilemap.Editor.csproj">
-      <Project>{FDDE7361-2E44-F500-3B7F-985122F7AE34}</Project>
-      <Name>Unity.2D.Tilemap.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.SpriteShape.Runtime.csproj">
-      <Project>{4DBB3D16-1CDB-5F16-1FE5-B60B269B18D3}</Project>
-      <Name>Unity.2D.SpriteShape.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Animation.Editor.csproj">
-      <Project>{BE2679FD-849C-8BC8-B646-48B7A317CD7E}</Project>
-      <Name>Unity.2D.Animation.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Tilemap.Extras.csproj">
-      <Project>{0D979CDD-8CFA-5E34-E5F7-F9C2A7FC29E6}</Project>
-      <Name>Unity.2D.Tilemap.Extras</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
-      <Project>{CFE8075B-D301-BB68-C32D-6592088A08CF}</Project>
-      <Name>Unity.VisualStudio.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Mathematics.Editor.csproj">
-      <Project>{6A27E045-21FB-9019-0432-26E22642AB3A}</Project>
-      <Name>Unity.Mathematics.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="spine-unity-editor.csproj">
-      <Project>{72DE7E71-83B9-6021-D86A-56184E0ABB9E}</Project>
-      <Name>spine-unity-editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{C15AF1E8-68A1-2A1E-80D2-8E60BD939F93}</Project>
-      <Name>Unity.TextMeshPro</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Common.Editor.csproj">
-      <Project>{1184B0C5-ACEF-2798-7BC3-4B34F7ACA812}</Project>
-      <Name>Unity.2D.Common.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.InternalAPIEditorBridge.001.csproj">
-      <Project>{AA63602A-36C9-2662-F3E0-922E30824F53}</Project>
-      <Name>Unity.InternalAPIEditorBridge.001</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{13A74752-A1ED-59FE-62AB-D57B27713115}</Project>
-      <Name>UnityEditor.UI</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
