@@ -2,9 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Spine.Unity;
+using Spine;
 public class TestSpineAPI : MonoBehaviour
 {
     private SkeletonAnimation skeletonAnimation;
+
+    // 便捷特性,可以自动识别动画名称,可以直接选择
+    [SpineAnimation]
+    public string animationName;
+    [SpineBone]
+    public string boneName;
+    [SpineSlot]
+    public string slotName;
+    [SpineAttachment]
+    public string attachmentName;
     void Start()
     {
         // 1. Spine是跨平台的2D骨骼动画工具,支持Unity,Cocos等引擎,在Unity中使用Spine需要导入Spine-Unity运行时包.
@@ -57,11 +68,49 @@ public class TestSpineAPI : MonoBehaviour
         */
         // 6. SkeletonAnimation脚本API:
         this.skeletonAnimation = this.GetComponent<SkeletonAnimation>();
-        if (this.skeletonAnimation != null)
+        if (this.skeletonAnimation == null) { return; }
+        // - 动画播放
+        // this.skeletonAnimation.loop = false; // 先设置循环状态,在切换动画
+        // this.skeletonAnimation.AnimationName = "idle"; // 设置播放动画
+        this.skeletonAnimation.AnimationState.SetAnimation(0, "run", false); // 通过AnimationState播放动画,参数: (轨道索引默认为0即可, 动画名称, 是否循环)
+        this.skeletonAnimation.AnimationState.AddAnimation(0, "jump", true, 0f); // 添加一个动画到队列,参数: (轨道索引, 动画名称, 是否循环, 延迟时间)
+        // - 转向
+        this.skeletonAnimation.Skeleton.ScaleX = -1f; // 通过缩放X轴实现转向
+        // this.skeletonAnimation.skeleton.ScaleY = -1f; // 反转Y轴
+        // - 动画事件
+        //      - 动画开始播放
+        this.skeletonAnimation.AnimationState.Start += delegate (Spine.TrackEntry trackEntry)
         {
-            // 播放动画
-            this.skeletonAnimation.AnimationName = "walk";
-            this.skeletonAnimation.loop = true;
-        }
+            Debug.Log("动画开始: " + trackEntry.Animation.Name);
+        };
+        //      - 动画被中断或清除
+        this.skeletonAnimation.AnimationState.End += delegate (Spine.TrackEntry trackEntry)
+        {
+            Debug.Log("动画结束: " + trackEntry.Animation.Name);
+        };
+        //      - 动画完成,每次循环播放完成都会触发
+        this.skeletonAnimation.AnimationState.Complete += delegate (Spine.TrackEntry trackEntry)
+        {
+            Debug.Log("动画播放完成: " + trackEntry.Animation.Name);
+        };
+        //      - 自定义事件
+        this.skeletonAnimation.AnimationState.Event += delegate (Spine.TrackEntry trackEntry, Spine.Event e)
+        {
+            // Event: 是Spine中的自定义事件数据
+            Debug.Log("动画事件: " + e.Data.Name);
+        };
+        // - 便捷特性
+        //      - 动画特性[SpineAnimation]
+        //      - 骨骼特性[SpineBone]
+        //      - 插槽特性[SpineSlot]
+        //      - 附件特性[SpineAttachment]
+        // - 获取骨骼和设置插槽附件
+        Bone bone = this.skeletonAnimation.Skeleton.FindBone(boneName); // 获取骨骼
+        // this.skeletonAnimation.Skeleton.SetAttachment(slotName, attachmentName); // 设置插槽的附件
+        // 7. 在UI中使用: 
+        /**
+            在UI中使用Spine动画需要使用SkeletonGraphic(UI)组件,直接将SkeletonDataAsset资源拖拽到场景选择UI的选项即可.
+            将生成的节点放入Canvas下即可,这样就可以使用UGUI控制动画显示的位置了
+        */
     }
 }

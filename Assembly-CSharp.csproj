@@ -281,7 +281,7 @@
      <Compile Include="Assets\Scripts\55.TileMap\TileMap扩展\TilpeMapPlus.cs" />
      <Compile Include="Assets\Scripts\55.TileMap\TileMap笔刷拓展\TestBrush.cs" />
      <Compile Include="Assets\Scripts\56. Animation\2D骨骼动画\IK反向动力学\IK.cs" />
-     <Compile Include="Assets\Scripts\56. Animation\2D骨骼动画\SpineAnimation.cs" />
+     <Compile Include="Assets\Scripts\56. Animation\2D骨骼动画\TestSpineAnimation.cs" />
      <Compile Include="Assets\Scripts\56. Animation\AnimationAPI\TestAnimationAPI.cs" />
      <Compile Include="Assets\Scripts\56. Animation\Animation状态机\NewAnimation.cs" />
      <Compile Include="Assets\Scripts\56. Animation\Spine\TestSpineAPI.cs" />
