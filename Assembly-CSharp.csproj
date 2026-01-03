@@ -290,6 +290,7 @@
      <Compile Include="Assets\Scripts\56. Animation\换装\TestSpriteResolver.cs" />
      <Compile Include="Assets\Scripts\57.Unity 模型\Animation页签\AnimationEvent.cs" />
      <Compile Include="Assets\Scripts\58. Animation3D\Animation3D.cs" />
+     <Compile Include="Assets\Scripts\58. Animation3D\动画1D混合\Animation1DMixture.cs" />
      <Compile Include="Assets\Scripts\58. Animation3D\动画分层\Animation3DLayer.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Angle.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Scale.cs" />
