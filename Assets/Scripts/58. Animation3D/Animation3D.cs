@@ -43,5 +43,10 @@ public class Animation3D : MonoBehaviour
         //              - Current State Then Next State: 先排队当前状态过渡,再排队下一个状态过渡
         //              - Next State Then Current State: 先排队下一个状态过渡,再排队当前状态过渡
         //        - Conditions: 条件,设置当前动画状态切换到下一个动画状态所需满足的条件,可以添加多个条件,所有条件都满足时才能切换到下一个动画状态
+
+        // 4. 状态机复用: 状态机行为一样,只是动画不一样的情况下,可以复用状态机
+        //   - Create -> Animator Override Controller: 创建一个动画覆盖控制器,用于复用已有的动画控制器,只需替换其中的动画剪辑即可 
+        //   - 关联已有的Animator Controller
+        //   - 替换其中的动画剪辑
     }
 }
