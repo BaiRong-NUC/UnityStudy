@@ -296,6 +296,7 @@
      <Compile Include="Assets\Scripts\58. Animation3D\动画分层\Animation3DLayer.cs" />
      <Compile Include="Assets\Scripts\58. Animation3D\动画目标匹配\Matching.cs" />
      <Compile Include="Assets\Scripts\58. Animation3D\状态机行为脚本\AnimatiorBehavor.cs" />
+     <Compile Include="Assets\Scripts\59. 角色控制器\PlayerContral.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Angle.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Scale.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Vector.cs" />
