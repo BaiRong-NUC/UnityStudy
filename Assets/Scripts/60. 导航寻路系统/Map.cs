@@ -113,6 +113,20 @@ public class Map : MonoBehaviour
             - Auto Update Positions: 自动更新位置开关,开启后连接点位置变化时会自动更新路径,关闭后代码改变了start和end跳跃点位置不会更新
             - Navigation Area: 导航区域,设置该连接点的区域类型,配合Areas页签使用
         */
+
+        // 5. 动态障碍组件: 当物体被破坏(组件失活)后才可以通过Nav Mesh Obstacle组件
+        // - Nav Mesh Obstacle组件参数
+        /**
+            - Carving: 雕刻开关,开启后该障碍物会在导航网格中挖出一个洞,认为该区域不可通行,一般静态障碍物使用
+                - Move Threshold: 移动阈值,障碍物移动多远后重新雕刻导航网格
+                - Time To Stationary: 静止时间,障碍物静止多长时间后重新雕刻导航网格
+                - Carve Only Stationary: 仅静止雕刻开关,开启后只有当障碍物静止时才进行雕刻
+            - Shape: 形状,选择障碍物的形状,盒子或胶囊
+            - Center: 中心点,调整障碍物在本地坐标系中的位置
+            - Size: 大小,调整盒子形状障碍物的大小
+            - Radius: 半径,调整胶囊形状障碍物的半径
+            - Height: 高度,调整胶囊形状障碍物的高度
+        */
     }
 
     // 实现鼠标点击,物体寻路
