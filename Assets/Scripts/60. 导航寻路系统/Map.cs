@@ -101,6 +101,18 @@ public class Map : MonoBehaviour
         // this.agent.ResetPath();
         // 调整到指定点的位置(瞬间移动)
         // this.agent.Warp(new Vector3(5, 0, 5));
+
+        // 4. 网格外连接组件: 两个不连接的平台之间有有限条通路(Off Mesh Link 组件)
+        // - Off Mesh Link组件参数
+        /**
+            - Start Point: 起始点,连接点的起始位置
+            - End Point: 结束点,连接点的结束位置
+            - Cost Override: 消耗覆盖,设置通过该连接点的寻路消耗,-1为使用Areas页签中的默认消耗
+            - Bi Directional: 双向开关,开启后可以双向通过该连接点,关闭只能从起始点到结束点单向通过
+            - Activated: 激活开关,控制该连接点是否可用
+            - Auto Update Positions: 自动更新位置开关,开启后连接点位置变化时会自动更新路径,关闭后代码改变了start和end跳跃点位置不会更新
+            - Navigation Area: 导航区域,设置该连接点的区域类型,配合Areas页签使用
+        */
     }
 
     // 实现鼠标点击,物体寻路
