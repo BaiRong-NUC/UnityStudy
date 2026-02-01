@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using LitJson;
 using UnityEngine;
 
 [System.Serializable] // 标记该类可以被序列化
@@ -50,17 +51,30 @@ public class JsonUtlityAPI : MonoBehaviour
         item1.itemName = "红药水";
         item1.itemCount = 10;
         player.items.Add("potion_red", item1);
-        File.WriteAllText(Application.persistentDataPath + "/player.json", JsonUtility.ToJson(player));
+        // File.WriteAllText(Application.persistentDataPath + "/player.json", JsonUtility.ToJson(player));
         // 注意: 
         // 1. JsonUtility序列号null字段时会变成默认值
         // 2. JsonUtility不支持Dictionary的序列化
         // 3. JsonUtility无法直接读取数据数组
         // 4. 必须Utf-8编码
 
-        // JsonUtility反序列化
-        string jsonStr = File.ReadAllText(Application.persistentDataPath + "/player.json");
-        Player newPlayer = JsonUtility.FromJson<Player>(jsonStr);
+        // // JsonUtility反序列化
+        // string jsonStr = File.ReadAllText(Application.persistentDataPath + "/player.json");
+        // Player newPlayer = JsonUtility.FromJson<Player>(jsonStr);
 
         // 2. LitJson的使用
+        string jsonStr = JsonMapper.ToJson(player);
+        File.WriteAllText(Application.persistentDataPath + "/player_litjson.json", jsonStr);
+        // LitJson支持Dictionary的序列化
+        // LitJson字符串会变成转义字符
+        // LitJson null字段不会变成默认值,且私有/保护字段不会被序列化
+        // LitJson不需要加特性
+        // 字典的key要是字符串类型,且自定义类要有无参构造函数
+
+        // 反序列化
+        // JsonData jsonData = JsonMapper.ToObject(jsonStr);
+        // print((string)jsonData["name"]);
+        // print((int)jsonData["age"]);
+        Player newPlayer = JsonMapper.ToObject<Player>(jsonStr);
     }
 }
