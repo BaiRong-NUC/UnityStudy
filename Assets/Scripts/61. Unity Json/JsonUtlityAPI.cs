@@ -60,5 +60,7 @@ public class JsonUtlityAPI : MonoBehaviour
         // JsonUtility反序列化
         string jsonStr = File.ReadAllText(Application.persistentDataPath + "/player.json");
         Player newPlayer = JsonUtility.FromJson<Player>(jsonStr);
+
+        // 2. LitJson的使用
     }
 }

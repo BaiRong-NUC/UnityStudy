@@ -306,6 +306,16 @@
      <Compile Include="Assets\Scripts\7. 父子关系\Tool.cs" />
      <Compile Include="Assets\Scripts\8. 坐标转化\TransPos.cs" />
      <Compile Include="Assets\Scripts\9. Input\TestInput.cs" />
+     <Compile Include="Assets\Scripts\extensions\LitJson\IJsonWrapper.cs" />
+     <Compile Include="Assets\Scripts\extensions\LitJson\JsonData.cs" />
+     <Compile Include="Assets\Scripts\extensions\LitJson\JsonException.cs" />
+     <Compile Include="Assets\Scripts\extensions\LitJson\JsonMapper.cs" />
+     <Compile Include="Assets\Scripts\extensions\LitJson\JsonMockWrapper.cs" />
+     <Compile Include="Assets\Scripts\extensions\LitJson\JsonReader.cs" />
+     <Compile Include="Assets\Scripts\extensions\LitJson\JsonWriter.cs" />
+     <Compile Include="Assets\Scripts\extensions\LitJson\Lexer.cs" />
+     <Compile Include="Assets\Scripts\extensions\LitJson\Netstandard15Polyfill.cs" />
+     <Compile Include="Assets\Scripts\extensions\LitJson\ParserToken.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <None Include="Assets\Scripts\37. XML数据持久化\LearnAPI\Test.xml" />
      <None Include="Assets\Spine\version.txt" />
