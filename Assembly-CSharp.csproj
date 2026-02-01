@@ -301,6 +301,7 @@
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Scale.cs" />
      <Compile Include="Assets\Scripts\6. TransForm\TestTransForm_Vector.cs" />
      <Compile Include="Assets\Scripts\60. 导航寻路系统\Map.cs" />
+     <Compile Include="Assets\Scripts\61. Unity Json\JsonUtlityAPI.cs" />
      <Compile Include="Assets\Scripts\7. 父子关系\Fahter.cs" />
      <Compile Include="Assets\Scripts\7. 父子关系\Tool.cs" />
      <Compile Include="Assets\Scripts\8. 坐标转化\TransPos.cs" />
