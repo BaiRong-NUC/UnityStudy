@@ -308,6 +308,7 @@
      <Compile Include="Assets\Scripts\62. UGUI\Image\ImageAPI.cs" />
      <Compile Include="Assets\Scripts\62. UGUI\RawImage\RawImageAPI.cs" />
      <Compile Include="Assets\Scripts\62. UGUI\Text\TextAPI.cs" />
+     <Compile Include="Assets\Scripts\62. UGUI\Toggle\ToggleAPI.cs" />
      <Compile Include="Assets\Scripts\7. 父子关系\Fahter.cs" />
      <Compile Include="Assets\Scripts\7. 父子关系\Tool.cs" />
      <Compile Include="Assets\Scripts\8. 坐标转化\TransPos.cs" />
