@@ -305,6 +305,7 @@
      <Compile Include="Assets\Scripts\61. Unity Json\JsonManage\TestJsonManage.cs" />
      <Compile Include="Assets\Scripts\61. Unity Json\JsonUtlityAPI.cs" />
      <Compile Include="Assets\Scripts\62. UGUI\Image\ImageAPI.cs" />
+     <Compile Include="Assets\Scripts\62. UGUI\RawImage\RawImageAPI.cs" />
      <Compile Include="Assets\Scripts\62. UGUI\Text\TextAPI.cs" />
      <Compile Include="Assets\Scripts\7. 父子关系\Fahter.cs" />
      <Compile Include="Assets\Scripts\7. 父子关系\Tool.cs" />
